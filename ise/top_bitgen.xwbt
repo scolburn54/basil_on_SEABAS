@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Shane\Desktop\UW\FPGA_Research\SEABAS_project\pyBAR_work\basil_on_SEABAS\ise\top.ncd
+OUTFILE=C:\Users\Shane\Desktop\UW\FPGA_Research\SEABAS_project\pyBAR_work\basil_on_SEABAS\ise\top.bit
+FAMILY=Virtex5
+PART=xc5vlx50-1ff676
+WORKINGDIR=C:\Users\Shane\Desktop\UW\FPGA_Research\SEABAS_project\pyBAR_work\basil_on_SEABAS\ise
+LICENSE=WebPack
+USER_INFO=179584524_179659126_210561750_423
