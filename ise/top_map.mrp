@@ -10,22 +10,22 @@ Target Device  : xc5vlx50
 Target Package : ff676
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.55 $
-Mapped Date    : Fri Apr 10 14:22:21 2015
+Mapped Date    : Mon Apr 13 15:48:32 2015
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings: 1764
+Number of warnings: 1837
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,737 out of  28,800    6%
-    Number used as Flip Flops:               1,734
+  Number of Slice Registers:                 1,754 out of  28,800    6%
+    Number used as Flip Flops:               1,751
     Number used as Latches:                      1
     Number used as Latch-thrus:                  2
-  Number of Slice LUTs:                      3,082 out of  28,800   10%
-    Number used as logic:                    2,431 out of  28,800    8%
-      Number using O6 output only:           1,660
+  Number of Slice LUTs:                      3,208 out of  28,800   11%
+    Number used as logic:                    2,556 out of  28,800    8%
+      Number using O6 output only:           1,823
       Number using O5 output only:             417
-      Number using O5 and O6:                  354
+      Number using O5 and O6:                  316
     Number used as Memory:                     617 out of   7,680    8%
       Number used as Dual Port RAM:            192
         Number using O6 output only:           128
@@ -36,19 +36,19 @@ Slice Logic Utilization:
         Number using O6 output only:           167
         Number using O5 output only:             1
         Number using O5 and O6:                  1
-    Number used as exclusive route-thru:        34
-  Number of route-thrus:                       448
-    Number using O6 output only:               448
+    Number used as exclusive route-thru:        35
+  Number of route-thrus:                       449
+    Number using O6 output only:               449
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,341 out of   7,200   18%
-  Number of LUT Flip Flop pairs used:        3,775
-    Number with an unused Flip Flop:         2,038 out of   3,775   53%
-    Number with an unused LUT:                 693 out of   3,775   18%
-    Number of fully used LUT-FF pairs:       1,044 out of   3,775   27%
-    Number of unique control sets:             244
+  Number of occupied Slices:                 1,357 out of   7,200   18%
+  Number of LUT Flip Flop pairs used:        3,897
+    Number with an unused Flip Flop:         2,143 out of   3,897   54%
+    Number with an unused LUT:                 689 out of   3,897   17%
+    Number of fully used LUT-FF pairs:       1,065 out of   3,897   27%
+    Number of unique control sets:             243
     Number of slice register sites lost
-      to control set restrictions:             303 out of  28,800    1%
+      to control set restrictions:             298 out of  28,800    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -59,29 +59,30 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        52 out of     440   11%
+  Number of bonded IOBs:                        64 out of     440   14%
+    Number of LOCed IOBs:                       64 out of      64  100%
     IOB Flip Flops:                             15
     IOB Master Pads:                             8
     IOB Slave Pads:                              8
 
 Specific Feature Utilization:
-  Number of BlockRAM/FIFO:                      12 out of      48   25%
-    Number using BlockRAM only:                 12
+  Number of BlockRAM/FIFO:                      13 out of      48   27%
+    Number using BlockRAM only:                 13
     Total primitives used:
       Number of 36k BlockRAM used:               8
       Number of 18k BlockRAM used:               6
     Total Memory used (KB):                    396 out of   1,728   22%
-  Number of BUFG/BUFGCTRLs:                      8 out of      32   25%
-    Number used as BUFGs:                        8
+  Number of BUFG/BUFGCTRLs:                      6 out of      32   18%
+    Number used as BUFGs:                        6
   Number of BSCANs:                              1 out of       4   25%
-  Number of DCM_ADVs:                            2 out of      12   16%
+  Number of PLL_ADVs:                            1 out of       6   16%
 
   Number of RPM macros:            9
-Average Fanout of Non-Clock Nets:                3.99
+Average Fanout of Non-Clock Nets:                3.95
 
 Peak Memory Usage:  545 MB
-Total REAL time to MAP completion:  1 mins 10 secs 
-Total CPU time to MAP completion:   48 secs 
+Total REAL time to MAP completion:  52 secs 
+Total CPU time to MAP completion:   39 secs 
 
 Table of Contents
 -----------------
@@ -104,6 +105,24 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:MapLib:23 - Short on signal LED<7> detected.
+WARNING:MapLib:23 - Short on signal LED<5> detected.
+WARNING:MapLib:23 - Short on signal LED<3> detected.
+WARNING:MapLib:23 - Short on signal LED<7> detected.
+WARNING:MapLib:23 - Short on signal LED<5> detected.
+WARNING:MapLib:23 - Short on signal LED<3> detected.
+WARNING:MapLib:23 - Short on signal LED<7> detected.
+WARNING:MapLib:23 - Short on signal LED<5> detected.
+WARNING:MapLib:23 - Short on signal LED<3> detected.
+WARNING:MapLib:23 - Short on signal LED<7> detected.
+WARNING:MapLib:23 - Short on signal LED<5> detected.
+WARNING:MapLib:23 - Short on signal LED<3> detected.
+WARNING:MapLib:23 - Short on signal LED<3> detected.
+WARNING:MapLib:23 - Short on signal LED<3> detected.
+WARNING:MapLib:23 - Short on signal LED<5> detected.
+WARNING:MapLib:23 - Short on signal LED<5> detected.
+WARNING:MapLib:23 - Short on signal LED<7> detected.
+WARNING:MapLib:23 - Short on signal LED<7> detected.
 WARNING:Pack:2874 - Trimming timing constraints from pin
    rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
    of frag REGCLKAU connected to power/ground net
@@ -1699,6 +1718,70 @@ WARNING:Pack:2780 - The register
    I_USE_INPUT_REG_NE0.U_GAND_DLY1" has the property IOB=TRUE, but it did not
    join an IO component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
+   "rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
    "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[0].I_SRLT_NE_0.FF"
    has the property IOB=TRUE, but it did not join an IO component because it is
    not connected to any IO element.
@@ -1922,6 +2005,9 @@ WARNING:Pack:2780 - The register "icmd/i_cmd_seq_core/stop_repeat_sync/OUT_8"
 WARNING:Pack:2780 - The register "icmd/i_cmd_seq_core/stop_repeat_sync/OUT_9"
    has the property IOB=TRUE, but it did not join an IO component because it is
    not connected to any IO element.
+WARNING:Pack:2780 - The register "slave/orRegAddr_18_1" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
 WARNING:Pack:2780 - The register
    "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[1].U_RST" has the property IOB=TRUE,
    but it did not join an IO component because it is not connected to any IO
@@ -6703,14 +6789,127 @@ WARNING:Pack:2780 - The register
    "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_0_TO_64K.F_SEL
    [7].U_SEL" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
+WARNING:Pack:1186 - One or more I/O components have conflicting property values.
+    For each occurrence, the system will use the property value attached to the
+   pad.  Otherwise, the system will use the first property value read.  To view
+   each occurrence, create a detailed map report (run map using the -detail
+   option).
+WARNING:Place:644 - A clock IOB clock component is not placed at an optimal
+   clock IOB site. The clock IOB component <REG_CLK> is placed at site <D26>.
+   The clock IO site can use the fast path between the IO and the Clock
+   buffer/GCLK if the IOB is placed in the master Clock IOB Site. This is
+   normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was applied on
+   COMP.PIN <REG_CLK.PAD> allowing your design to continue. This constraint
+   disables all clock placer rules related to the specified COMP.PIN. The use of
+   this override is highly discouraged as it may lead to very poor timing
+   results. It is recommended that this error condition be corrected in the
+   design.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp273.PULL is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp273.PULL.1 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp273.PULL.2 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL. Adding a pullup, pulldown, or keeper to a differential IO
+   can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL.1. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL. Adding a pullup, pulldown, or keeper to a differential IO
+   can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL.2. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL.1 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL.1. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL.3. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL.2 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL.2. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL.3 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL.3. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp276.PULL. Adding a pullup, pulldown, or keeper to a differential IO
+   can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp276.PULL.1. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp277.PULL. Adding a pullup, pulldown, or keeper to a differential IO
+   can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp276.PULL.2. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp277.PULL.1. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp276.PULL.3. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp277.PULL.2. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp277.PULL.3. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL.4. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL.5. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL.4 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL.4. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL.6. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL.5 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL.5. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL.7. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL.6 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL.6. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL.7 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL.7. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:2236 - The DIVCLK_DIVIDE value 5 of PLL_ADV instance
+   iclock_manager/PLL_ADV_INST is above the Fin / Fpfd value 2.631579, where Fin
+   is the input frequency, 50.000000 MHz, and Fpfd min - max values of 19.000000
+   - 450.000000 MHz.
 
 Section 3 - Informational
 -------------------------
 INFO:LIT:243 - Logical network icon_control0<10> has no load.
-INFO:LIT:395 - The above info message is repeated 98 more times for the
+INFO:LIT:395 - The above info message is repeated 97 more times for the
    following (max. 5 shown):
    icon_control0<11>,
    icon_control0<15>,
@@ -6719,9 +6918,10 @@ INFO:LIT:395 - The above info message is repeated 98 more times for the
    icon_control0<22>
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
-INFO:LIT:244 - All of the single ended outputs in this design are using slew
-   rate limited output drivers. The delay on speed critical single ended outputs
-   can be dramatically reduced by designating them as fast outputs.
+INFO:MapLib:856 - PLL_ADV iclock_manager/PLL_ADV_INST CLKIN2 pin was
+   disconnected because a constant 1 is driving the CLKINSEL pin.
+INFO:MapLib:841 - Changing COMPENSATION attribute from SYSTEM_SYNCHRONOUS to
+   INTERNAL for PLL_ADV iclock_manager/PLL_ADV_INST.
 INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
    0.000 to 85.000 Celsius)
 INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
@@ -6729,18 +6929,12 @@ INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 INFO:Pack:1650 - Map created a placed design.
-INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance
-   with the CLKFX and CLKFX180 outputs of the DCM_ADV comp DCM_ADV_0, consult
-   the device Data Sheet.
-INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance
-   with the CLKFX and CLKFX180 outputs of the DCM_ADV comp DCM_ADV_1, consult
-   the device Data Sheet.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  57 block(s) removed
- 127 block(s) optimized away
-  30 signal(s) removed
+  63 block(s) removed
+ 130 block(s) optimized away
+  31 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -6831,6 +7025,8 @@ The signal "icon_control0<28>" is sourceless and has been removed.
 The signal "icon_control0<34>" is sourceless and has been removed.
 The signal "icon_control0<29>" is sourceless and has been removed.
 The signal "icon_control0<35>" is sourceless and has been removed.
+The signal "icmd/i_cmd_seq_core/Mcompar_BUS_DATA_OUT_cmp_lt0000_lutdi5" is
+sourceless and has been removed.
 The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<3>" is sourceless and has been
 removed.
  Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_HCE" (ROM)
@@ -6877,6 +7073,11 @@ The signal
 "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I
 _CS_GANDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_NE0.U
 _GAND_SRL_SET/SRL_Q_O" is sourceless and has been removed.
+Unused block "LED<3>_PULLDOWN" (PULLDOWN) removed.
+Unused block "LED<4>_PULLDOWN" (PULLDOWN) removed.
+Unused block "LED<5>_PULLDOWN" (PULLDOWN) removed.
+Unused block "LED<6>_PULLDOWN" (PULLDOWN) removed.
+Unused block "LED<7>_PULLDOWN" (PULLDOWN) removed.
 Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[11].U_LUT" (ROM)
 removed.
 Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[12].U_LUT" (ROM)
@@ -6906,6 +7107,8 @@ removed.
 Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_HCE" (ROM)
 removed.
 Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_HCE" (ROM)
+removed.
+Unused block "icmd/i_cmd_seq_core/Mcompar_BUS_DATA_OUT_cmp_lt0000_lutdi5" (ROM)
 removed.
 
 Optimized Block(s):
@@ -6966,6 +7169,10 @@ VCC 		XST_VCC
 GND 		i_data_fifo/fifo_i/XST_GND
 VCC 		i_data_fifo/fifo_i/XST_VCC
 VCC 		i_rrp_arbiter/XST_VCC
+GND 		iclock_manager/XST_GND
+VCC 		iclock_manager/XST_VCC
+LUT3 		icmd/i_cmd_seq_core/Mcompar_BUS_DATA_OUT_cmp_lt0000_lut<5>
+   optimized to 1
 GND 		icmd/i_cmd_seq_core/XST_GND
 VCC 		icmd/i_cmd_seq_core/XST_VCC
 GND 		icmd/i_cmd_seq_core/cmd_rst_flag_domain_crossing/XST_GND
@@ -7128,57 +7335,69 @@ Section 6 - IOB Properties
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 | CLK_50M                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| CMDDCI_0n                          | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
-| CMDDCI_0p                          | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
-| CMDDCI_1n                          | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
-| CMDDCI_1p                          | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
-| CMDDCI_2n                          | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
-| CMDDCI_2p                          | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
-| CMDDCI_3n                          | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
-| CMDDCI_3p                          | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
-| DOBOUT_0n                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
-| DOBOUT_0p                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      | IDDR         |          |          |
-| DOBOUT_1n                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
-| DOBOUT_1p                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      | IDDR         |          |          |
-| DOBOUT_2n                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
-| DOBOUT_2p                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      | IDDR         |          |          |
-| DOBOUT_3n                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
-| DOBOUT_3p                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      | IDDR         |          |          |
-| LED<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| LED<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| LED<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| LED<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| LED<4>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| LED<5>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| LED<6>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| LED<7>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| NIM_OUT<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| NIM_OUT<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| REFCLK_0n                          | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
-| REFCLK_0p                          | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
-| REFCLK_1n                          | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
-| REFCLK_1p                          | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
-| REFCLK_2n                          | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
-| REFCLK_2p                          | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
-| REFCLK_3n                          | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
-| REFCLK_3p                          | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
-| REG_ACT                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| REG_CLK                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| REG_DI                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
-| REG_DO                             | IOB              | INPUT     | LVCMOS25             |       |          |      | IFF          |          |          |
-| USR_CLK                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| USR_CLOSE_ACK                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| USR_RX_RE                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| USR_TX_AFULL                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| USR_TX_WD<0>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| USR_TX_WD<1>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| USR_TX_WD<2>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| USR_TX_WD<3>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| USR_TX_WD<4>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| USR_TX_WD<5>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| USR_TX_WD<6>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| USR_TX_WD<7>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| USR_TX_WE                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| CMDDCI_0n                          | IOBS             | OUTPUT    | HT_25                |       |          |      |              | PULLUP   |          |
+| CMDDCI_0p                          | IOBM             | OUTPUT    | HT_25                |       |          |      | ODDR         | PULLDOWN |          |
+| CMDDCI_1n                          | IOBS             | OUTPUT    | HT_25                |       |          |      |              | PULLUP   |          |
+| CMDDCI_1p                          | IOBM             | OUTPUT    | HT_25                |       |          |      | ODDR         | PULLDOWN |          |
+| CMDDCI_2n                          | IOBS             | OUTPUT    | HT_25                |       |          |      |              | PULLUP   |          |
+| CMDDCI_2p                          | IOBM             | OUTPUT    | HT_25                |       |          |      | ODDR         | PULLDOWN |          |
+| CMDDCI_3n                          | IOBS             | OUTPUT    | HT_25                |       |          |      |              | PULLUP   |          |
+| CMDDCI_3p                          | IOBM             | OUTPUT    | HT_25                |       |          |      | ODDR         | PULLDOWN |          |
+| DOBOUT_0n                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              | PULLUP   |          |
+| DOBOUT_0p                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      | IDDR         | PULLDOWN |          |
+| DOBOUT_1n                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              | PULLUP   |          |
+| DOBOUT_1p                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      | IDDR         | PULLDOWN |          |
+| DOBOUT_2n                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              | PULLUP   |          |
+| DOBOUT_2p                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      | IDDR         | PULLDOWN |          |
+| DOBOUT_3n                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              | PULLUP   |          |
+| DOBOUT_3p                          | IOB              | INPUT     | LVDS_25              | TRUE  |          |      | IDDR         | PULLDOWN |          |
+| LED<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 16       | FAST | OFF          | PULLDOWN |          |
+| LED<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 16       | FAST |              | PULLDOWN |          |
+| LED<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 16       | FAST |              | PULLDOWN |          |
+| LED<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 16       | FAST |              |          |          |
+| LED<4>                             | IOB              | OUTPUT    | LVCMOS33             |       | 16       | FAST |              |          |          |
+| LED<5>                             | IOB              | OUTPUT    | LVCMOS33             |       | 16       | FAST |              |          |          |
+| LED<6>                             | IOB              | OUTPUT    | LVCMOS33             |       | 16       | FAST |              |          |          |
+| LED<7>                             | IOB              | OUTPUT    | LVCMOS33             |       | 16       | FAST |              |          |          |
+| NIM_OUT<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 16       | FAST |              |          |          |
+| NIM_OUT<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 16       | FAST |              |          |          |
+| REFCLK_0n                          | IOBS             | OUTPUT    | HT_25                |       |          |      |              | PULLUP   |          |
+| REFCLK_0p                          | IOBM             | OUTPUT    | HT_25                |       |          |      | ODDR         | PULLDOWN |          |
+| REFCLK_1n                          | IOBS             | OUTPUT    | HT_25                |       |          |      |              | PULLUP   |          |
+| REFCLK_1p                          | IOBM             | OUTPUT    | HT_25                |       |          |      | ODDR         | PULLDOWN |          |
+| REFCLK_2n                          | IOBS             | OUTPUT    | HT_25                |       |          |      |              | PULLUP   |          |
+| REFCLK_2p                          | IOBM             | OUTPUT    | HT_25                |       |          |      | ODDR         | PULLDOWN |          |
+| REFCLK_3n                          | IOBS             | OUTPUT    | HT_25                |       |          |      |              | PULLUP   |          |
+| REFCLK_3p                          | IOBM             | OUTPUT    | HT_25                |       |          |      | ODDR         | PULLDOWN |          |
+| REG_ACT                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| REG_CLK                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| REG_DI                             | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW | OFF          |          |          |
+| REG_DO                             | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| USR_ACTIVE                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USR_CLK                            | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| USR_CLOSE_ACK                      | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| USR_CLOSE_REQ                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USR_RX_EMPTY                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USR_RX_RD<0>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USR_RX_RD<1>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USR_RX_RD<2>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USR_RX_RD<3>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USR_RX_RD<4>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USR_RX_RD<5>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USR_RX_RD<6>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USR_RX_RD<7>                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USR_RX_RE                          | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| USR_RX_RV                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USR_TX_AFULL                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| USR_TX_WD<0>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| USR_TX_WD<1>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| USR_TX_WD<2>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| USR_TX_WD<3>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| USR_TX_WD<4>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| USR_TX_WD<5>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| USR_TX_WD<6>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| USR_TX_WD<7>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
+| USR_TX_WE                          | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

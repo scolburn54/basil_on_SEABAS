@@ -30,7 +30,7 @@ Writing NGC file
 "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEAB
 AS/ise/top_cs.ngc" ...
 Total REAL time to NGCBUILD completion:  5 sec
-Total CPU time to NGCBUILD completion:   5 sec
+Total CPU time to NGCBUILD completion:   4 sec
 
 Writing NGCBUILD log file
 "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEAB

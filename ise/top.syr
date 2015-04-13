@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: top.prj
 
@@ -141,8 +141,10 @@ Compiling verilog file "../src/slave.v" in library work
 Module <fei4_rx_core> compiled
 Compiling verilog file "../src/cmd_seq.v" in library work
 Module <slave> compiled
-Compiling verilog file "../basil/utils/rbcp_to_bus.v" in library work
+Compiling verilog file "clock_manager.v" in library work
 Module <cmd_seq> compiled
+Compiling verilog file "../basil/utils/rbcp_to_bus.v" in library work
+Module <clock_manager> compiled
 Compiling verilog file "../basil/utils/fifo_32_to_8.v" in library work
 Module <rbcp_to_bus> compiled
 Compiling verilog file "../basil/rrp_arbiter/rrp_arbiter.v" in library work
@@ -176,6 +178,8 @@ Analyzing hierarchy for module <top> in library <work> with parameters.
 	RX3_HIGHADDR = "00000000000000001000010011111111"
 	RX4_BASEADDR = "00000000000000001000001100000000"
 	RX4_HIGHADDR = "00000000000000001000001111111111"
+
+Analyzing hierarchy for module <clock_manager> in library <work>.
 
 Analyzing hierarchy for module <slave> in library <work>.
 
@@ -422,53 +426,56 @@ Module <top> is correct for synthesis.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <OBUFDS_inst_cmd_3> in unit <top>.
     Set user-defined property "IOSTANDARD =  LVDS_25" for instance <OBUFDS_inst_cmd_3> in unit <top>.
     Set user-defined property "SLEW =  SLOW" for instance <OBUFDS_inst_cmd_3> in unit <top>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <CLKIN_IBUFG_INST> in unit <top>.
-    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLKIN_IBUFG_INST> in unit <top>.
-    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLKIN_IBUFG_INST> in unit <top>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLKIN_IBUFG_INST> in unit <top>.
-    Set user-defined property "CLKDV_DIVIDE =  2.000000" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "CLKFX_DIVIDE =  5" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "CLKFX_MULTIPLY =  16" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "CLKIN_PERIOD =  20.000000" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "DCM_AUTOCALIBRATION =  TRUE" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "DCM_PERFORMANCE_MODE =  MAX_SPEED" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "FACTORY_JF =  F0F0" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "SIM_DEVICE =  VIRTEX5" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_ADV_0> in unit <top>.
-    Set user-defined property "CLKDV_DIVIDE =  10.000000" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "CLKFX_DIVIDE =  8" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "CLKFX_MULTIPLY =  2" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "CLKIN_PERIOD =  6.250000" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "DCM_AUTOCALIBRATION =  TRUE" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "DCM_PERFORMANCE_MODE =  MAX_RANGE" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "DFS_FREQUENCY_MODE =  HIGH" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "DLL_FREQUENCY_MODE =  HIGH" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "FACTORY_JF =  F0F0" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "SIM_DEVICE =  VIRTEX5" for instance <DCM_ADV_1> in unit <top>.
-    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_ADV_1> in unit <top>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <CLK_REG_BUFG_INST> in unit <top>.
     Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLK_REG_BUFG_INST> in unit <top>.
     Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLK_REG_BUFG_INST> in unit <top>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLK_REG_BUFG_INST> in unit <top>.
-    Set user-defined property "KEEP =  {TRUE}" for signal <CLK16>.
-    Set user-defined property "KEEP =  {TRUE}" for signal <CLK40>.
-    Set user-defined property "KEEP =  {TRUE}" for signal <CLK160>.
-    Set user-defined property "KEEP =  {TRUE}" for signal <CLK320>.
-    Set user-defined property "KEEP =  {TRUE}" for signal <BUS_CLK>.
+Analyzing module <clock_manager> in library <work>.
+Module <clock_manager> is correct for synthesis.
+ 
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <CLKIN1_IBUFG_INST> in unit <clock_manager>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLKIN1_IBUFG_INST> in unit <clock_manager>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLKIN1_IBUFG_INST> in unit <clock_manager>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLKIN1_IBUFG_INST> in unit <clock_manager>.
+    Set user-defined property "BANDWIDTH =  OPTIMIZED" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKFBOUT_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKFBOUT_MULT =  64" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKFBOUT_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKIN1_PERIOD =  20.000000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKIN2_PERIOD =  10.000000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT0_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT0_DIVIDE =  4" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT0_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT0_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT1_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT1_DIVIDE =  2" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT1_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT1_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT2_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT2_DIVIDE =  40" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT2_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT2_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT3_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT3_DIVIDE =  16" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT3_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT3_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT4_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT4_DIVIDE =  1" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT4_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT4_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT5_DESKEW_ADJUST =  NONE" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT5_DIVIDE =  1" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT5_DUTY_CYCLE =  0.500000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLKOUT5_PHASE =  0.000000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "CLK_FEEDBACK =  CLKFBOUT" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "COMPENSATION =  SYSTEM_SYNCHRONOUS" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "DIVCLK_DIVIDE =  5" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "EN_REL =  FALSE" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "PLL_PMCD_MODE =  FALSE" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "REF_JITTER =  0.005000" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "RESET_ON_LOSS_OF_LOCK =  FALSE" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "RST_DEASSERT_CLK =  CLKIN1" for instance <PLL_ADV_INST> in unit <clock_manager>.
+    Set user-defined property "SIM_DEVICE =  VIRTEX5" for instance <PLL_ADV_INST> in unit <clock_manager>.
 Analyzing module <slave> in library <work>.
 Module <slave> is correct for synthesis.
  
@@ -997,6 +1004,11 @@ Synthesizing Unit <bus_to_ip_5>.
 Unit <bus_to_ip_5> synthesized.
 
 
+Synthesizing Unit <clock_manager>.
+    Related source file is "clock_manager.v".
+Unit <clock_manager> synthesized.
+
+
 Synthesizing Unit <fifo_32_to_8>.
     Related source file is "../basil/utils/fifo_32_to_8.v".
 WARNING:Xst:646 - Signal <DATA_BUF<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1248,7 +1260,6 @@ Unit <fei4_rx_4> synthesized.
 
 Synthesizing Unit <top>.
     Related source file is "../src/top.v".
-WARNING:Xst:647 - Input <USR_CLOSE_REQ> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <USR_RX_EMPTY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <USR_ACTIVE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <USR_RX_RD> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1256,6 +1267,11 @@ WARNING:Xst:647 - Input <USR_RX_RV> is never used. This port will be preserved a
 WARNING:Xst:646 - Signal <TDC_FIFO_READ> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <TDC_FIFO_DATA> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
 WARNING:Xst:646 - Signal <RX_READY<3:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <LOCKED1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <CLKIN_IBUFG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <CLKFX_BUF> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <CLKFB_IN> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <CLK0_OUT> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <top> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -1662,6 +1678,23 @@ INFO:Xst:2261 - The FF/Latch <icmd/i_cmd_seq_core/BUS_RST_FF2> in Unit <top> is 
 Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 13.
 Replicating register rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/rec_sync_ready to handle IOB=TRUE attribute
 
+FlipFlop rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4 has been replicated 1 time(s)
+FlipFlop rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5 has been replicated 1 time(s)
+FlipFlop rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8 has been replicated 1 time(s)
+FlipFlop rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9 has been replicated 1 time(s)
+FlipFlop rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4 has been replicated 1 time(s)
+FlipFlop rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5 has been replicated 1 time(s)
+FlipFlop rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8 has been replicated 1 time(s)
+FlipFlop rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9 has been replicated 1 time(s)
+FlipFlop rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4 has been replicated 1 time(s)
+FlipFlop rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5 has been replicated 1 time(s)
+FlipFlop rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8 has been replicated 1 time(s)
+FlipFlop rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9 has been replicated 1 time(s)
+FlipFlop rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4 has been replicated 1 time(s)
+FlipFlop rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5 has been replicated 1 time(s)
+FlipFlop rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8 has been replicated 1 time(s)
+FlipFlop rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9 has been replicated 1 time(s)
+FlipFlop slave/orRegAddr_18 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -1769,8 +1802,8 @@ Unit <top> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1419
- Flip-Flops                                            : 1419
+# Registers                                            : 1436
+ Flip-Flops                                            : 1436
 # Shift Registers                                      : 97
  2-bit shift register                                  : 16
  3-bit shift register                                  : 80
@@ -1803,28 +1836,28 @@ Design Statistics
 # IOs                              : 64
 
 Cell Usage :
-# BELS                             : 3996
-#      GND                         : 47
-#      INV                         : 161
+# BELS                             : 4071
+#      GND                         : 48
+#      INV                         : 162
 #      LUT1                        : 399
-#      LUT2                        : 158
-#      LUT3                        : 230
-#      LUT4                        : 345
-#      LUT5                        : 486
-#      LUT6                        : 760
+#      LUT2                        : 183
+#      LUT3                        : 232
+#      LUT4                        : 408
+#      LUT5                        : 506
+#      LUT6                        : 738
 #      MUXCY                       : 697
-#      MUXF7                       : 70
-#      VCC                         : 44
+#      MUXF7                       : 54
+#      VCC                         : 45
 #      XORCY                       : 599
-# FlipFlops/Latches                : 1536
-#      FD                          : 320
+# FlipFlops/Latches                : 1553
+#      FD                          : 338
 #      FD_1                        : 1
 #      FDC                         : 76
 #      FDCE                        : 81
 #      FDE                         : 175
 #      FDPE                        : 8
-#      FDR                         : 273
-#      FDRE                        : 569
+#      FDR                         : 305
+#      FDRE                        : 536
 #      FDRS                        : 5
 #      FDRS_1                      : 4
 #      FDS                         : 4
@@ -1840,16 +1873,16 @@ Cell Usage :
 # Shift Registers                  : 113
 #      SRL16                       : 16
 #      SRLC16E                     : 97
-# Clock Buffers                    : 7
-#      BUFG                        : 7
-# IO Buffers                       : 40
-#      IBUF                        : 3
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 41
+#      IBUF                        : 4
 #      IBUFDS                      : 4
 #      IBUFG                       : 2
 #      OBUF                        : 23
 #      OBUFDS                      : 8
-# DCM_ADVs                         : 2
-#      DCM_ADV                     : 2
+# Others                           : 1
+#      PLL_ADV                     : 1
 =========================================================================
 
 Device utilization summary:
@@ -1859,19 +1892,19 @@ Selected Device : 5vlx50ff676-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1534  out of  28800     5%  
- Number of Slice LUTs:                 3100  out of  28800    10%  
-    Number used as Logic:              2539  out of  28800     8%  
+ Number of Slice Registers:            1551  out of  28800     5%  
+ Number of Slice LUTs:                 3189  out of  28800    11%  
+    Number used as Logic:              2628  out of  28800     9%  
     Number used as Memory:              561  out of   7680     7%  
        Number used as RAM:              448
        Number used as SRL:              113
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   4001
-   Number with an unused Flip Flop:    2467  out of   4001    61%  
-   Number with an unused LUT:           901  out of   4001    22%  
-   Number of fully used LUT-FF pairs:   633  out of   4001    15%  
-   Number of unique control sets:       228
+ Number of LUT Flip Flop pairs used:   4061
+   Number with an unused Flip Flop:    2510  out of   4061    61%  
+   Number with an unused LUT:           872  out of   4061    21%  
+   Number of fully used LUT-FF pairs:   679  out of   4061    16%  
+   Number of unique control sets:       227
 
 IO Utilization: 
  Number of IOs:                          64
@@ -1881,8 +1914,8 @@ IO Utilization:
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               11  out of     48    22%  
     Number using Block RAM only:         11
- Number of BUFG/BUFGCTRLs:                7  out of     32    21%  
- Number of DCM_ADVs:                      2  out of     12    16%  
+ Number of BUFG/BUFGCTRLs:                5  out of     32    15%  
+ Number of PLL_ADVs:                      1  out of      6    16%  
 
 ---------------------------
 Partition Resource Summary:
@@ -1902,15 +1935,15 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+--------------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)          | Load  |
------------------------------------+--------------------------------+-------+
-REG_CLK                            | IBUFG+BUFG                     | 805   |
-CLK_50M                            | DCM_ADV_0:CLKFX+DCM_ADV_1:CLKFX| 241   |
-CLK_50M                            | DCM_ADV_0:CLKFX+DCM_ADV_1:CLKDV| 453   |
-CLK_50M                            | DCM_ADV_0:CLKFX+DCM_ADV_1:CLK0 | 288   |
-CLK_50M                            | DCM_ADV_0:CLKFX+DCM_ADV_1:CLK2X| 16    |
------------------------------------+--------------------------------+-------+
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+REG_CLK                            | IBUFG+BUFG             | 806   |
+iclock_manager/CLKOUT2_BUF         | BUFG                   | 241   |
+iclock_manager/CLKOUT3_BUF         | BUFG                   | 469   |
+iclock_manager/CLKOUT0_BUF         | BUFG                   | 288   |
+iclock_manager/CLKOUT1_BUF         | BUFG                   | 16    |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -1928,9 +1961,9 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 10.026ns (Maximum Frequency: 99.745MHz)
+   Minimum period: 7.183ns (Maximum Frequency: 139.213MHz)
    Minimum input arrival time before clock: 3.446ns
-   Maximum output required time after clock: 6.927ns
+   Maximum output required time after clock: 6.921ns
    Maximum combinational path delay: 4.511ns
 
 Timing Detail:
@@ -1939,66 +1972,161 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'REG_CLK'
-  Clock period: 7.743ns (frequency: 129.141MHz)
-  Total number of paths / destination ports: 1152772 / 3668
+  Clock period: 7.183ns (frequency: 139.213MHz)
+  Total number of paths / destination ports: 1097603 / 3635
 -------------------------------------------------------------------------
-Delay:               7.743ns (Levels of Logic = 13)
+Delay:               7.183ns (Levels of Logic = 15)
   Source:            slave/orRegAddr_31 (FF)
-  Destination:       icmd/i_cmd_seq_core/Mram_cmd_mem922 (RAM)
+  Destination:       icmd/i_cmd_seq_core/Mram_cmd_mem952 (RAM)
   Source Clock:      REG_CLK rising
   Destination Clock: REG_CLK rising
 
-  Data Path: slave/orRegAddr_31 to icmd/i_cmd_seq_core/Mram_cmd_mem922
+  Data Path: slave/orRegAddr_31 to icmd/i_cmd_seq_core/Mram_cmd_mem952
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              17   0.471   1.157  orRegAddr_31 (orRegAddr_31)
+     FD:C->Q              17   0.471   1.061  orRegAddr_31 (orRegAddr_31)
      end scope: 'slave'
      begin scope: 'icmd'
      begin scope: 'i_bus_to_ip'
-     LUT6:I0->O           31   0.094   1.196  CS_cmp_le0000335 (CS_cmp_le0000335)
-     LUT6:I0->O           38   0.094   1.101  IP_ADD<9>1 (IP_ADD<9>)
+     LUT5:I0->O            1   0.094   0.710  CS_cmp_le0000324 (CS_cmp_le0000324)
+     LUT6:I3->O           69   0.094   0.614  CS_cmp_le00003152 (CS)
+     LUT2:I1->O            2   0.094   0.978  IP_ADD<5>1 (IP_ADD<5>)
      end scope: 'i_bus_to_ip'
      begin scope: 'i_cmd_seq_core'
-     LUT5:I0->O            1   0.094   0.000  Mcompar_BUS_DATA_OUT_cmp_lt0000_lut<1> (Mcompar_BUS_DATA_OUT_cmp_lt0000_lut<1>)
-     MUXCY:S->O            1   0.372   0.000  Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<1> (Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<1>)
+     LUT5:I0->O            1   0.094   0.000  Mcompar_BUS_DATA_OUT_cmp_lt0000_lut<0> (Mcompar_BUS_DATA_OUT_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<0> (Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<1> (Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<1>)
      MUXCY:CI->O           1   0.026   0.000  Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<2> (Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<2>)
      MUXCY:CI->O           1   0.026   0.000  Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<3> (Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<3>)
      MUXCY:CI->O           1   0.026   0.000  Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<4> (Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<4>)
-     MUXCY:CI->O          29   0.254   0.607  Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<5> (Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<5>)
-     LUT2:I1->O           26   0.094   1.195  _and00001 (_and0000)
-     LUT6:I0->O            4   0.094   0.352  write_ctrl27 (write_ctrl27)
-     RAM64M:WE                 0.490          Mram_cmd_mem28
+     MUXCY:CI->O          30   0.254   0.607  Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<5> (Mcompar_BUS_DATA_OUT_cmp_lt0000_cy<5>)
+     LUT3:I2->O           26   0.094   0.606  _and00001 (_and0000)
+     LUT6:I5->O            4   0.094   0.352  write_ctrl (write_ctrl)
+     RAM64M:WE                 0.490          Mram_cmd_mem1
     ----------------------------------------
-    Total                      7.743ns (2.135ns logic, 5.608ns route)
-                                       (27.6% logic, 72.4% route)
+    Total                      7.183ns (2.255ns logic, 4.928ns route)
+                                       (31.4% logic, 68.6% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'CLK_50M'
-  Clock period: 10.026ns (frequency: 99.745MHz)
-  Total number of paths / destination ports: 87533 / 1776
+Timing constraint: Default period analysis for Clock 'iclock_manager/CLKOUT2_BUF'
+  Clock period: 6.146ns (frequency: 162.707MHz)
+  Total number of paths / destination ports: 49033 / 266
 -------------------------------------------------------------------------
-Delay:               3.133ns (Levels of Logic = 2)
-  Source:            rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/scc0 (FF)
-  Destination:       rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/sdataout (FF)
-  Source Clock:      CLK_50M rising 3.2X
-  Destination Clock: CLK_50M rising 3.2X
+Delay:               6.146ns (Levels of Logic = 23)
+  Source:            icmd/i_cmd_seq_core/cmd_size_sync/OUT_0 (FF)
+  Destination:       icmd/i_cmd_seq_core/Mram_cmd_mem_ren (RAM)
+  Source Clock:      iclock_manager/CLKOUT2_BUF rising
+  Destination Clock: iclock_manager/CLKOUT2_BUF rising
 
-  Data Path: rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/scc0 to rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/sdataout
+  Data Path: icmd/i_cmd_seq_core/cmd_size_sync/OUT_0 to icmd/i_cmd_seq_core/Mram_cmd_mem_ren
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     SRL16:CLK->Q          1   1.889   0.576  scc0 (cc0)
-     LUT4:I2->O            1   0.094   0.480  sdataout_or0000_SW0 (N280)
-     LUT5:I4->O            1   0.094   0.000  sdataout_or0000 (sdataout_or0000)
+     FDE:C->Q              2   0.471   0.485  OUT_0 (OUT_0)
+     end scope: 'cmd_size_sync'
+     LUT1:I0->O            1   0.094   0.000  Msub__sub0000_cy<0>_rt (Msub__sub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.372   0.000  Msub__sub0000_cy<0> (Msub__sub0000_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  Msub__sub0000_cy<1> (Msub__sub0000_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  Msub__sub0000_cy<2> (Msub__sub0000_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  Msub__sub0000_cy<3> (Msub__sub0000_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  Msub__sub0000_cy<4> (Msub__sub0000_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  Msub__sub0000_cy<5> (Msub__sub0000_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  Msub__sub0000_cy<6> (Msub__sub0000_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  Msub__sub0000_cy<7> (Msub__sub0000_cy<7>)
+     MUXCY:CI->O           1   0.026   0.000  Msub__sub0000_cy<8> (Msub__sub0000_cy<8>)
+     MUXCY:CI->O           1   0.026   0.000  Msub__sub0000_cy<9> (Msub__sub0000_cy<9>)
+     MUXCY:CI->O           1   0.026   0.000  Msub__sub0000_cy<10> (Msub__sub0000_cy<10>)
+     MUXCY:CI->O           1   0.026   0.000  Msub__sub0000_cy<11> (Msub__sub0000_cy<11>)
+     MUXCY:CI->O           1   0.026   0.000  Msub__sub0000_cy<12> (Msub__sub0000_cy<12>)
+     MUXCY:CI->O           1   0.026   0.000  Msub__sub0000_cy<13> (Msub__sub0000_cy<13>)
+     XORCY:CI->O           2   0.357   0.485  Msub__sub0000_xor<14> (_sub0000<14>)
+     LUT2:I1->O            1   0.094   0.000  Msub__sub0001_lut<14> (Msub__sub0001_lut<14>)
+     MUXCY:S->O            1   0.372   0.000  Msub__sub0001_cy<14> (Msub__sub0001_cy<14>)
+     XORCY:CI->O           1   0.357   0.710  Msub__sub0001_xor<15> (_sub0001<15>)
+     LUT4:I1->O            1   0.094   0.000  Mcompar_END_SEQ_REP_NEXT_cmp_eq0000_lut<5> (Mcompar_END_SEQ_REP_NEXT_cmp_eq0000_lut<5>)
+     MUXCY:S->O           12   0.600   0.540  Mcompar_END_SEQ_REP_NEXT_cmp_eq0000_cy<5> (END_SEQ_REP_NEXT_cmp_eq0000)
+     LUT6:I5->O            1   0.094   0.336  CMD_MEM_ADD<9>1 (CMD_MEM_ADD<9>)
+     RAMB18:ADDRB12            0.347          Mram_cmd_mem_ren
+    ----------------------------------------
+    Total                      6.146ns (3.590ns logic, 2.556ns route)
+                                       (58.4% logic, 41.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'iclock_manager/CLKOUT3_BUF'
+  Clock period: 7.012ns (frequency: 142.613MHz)
+  Total number of paths / destination ports: 11143 / 1078
+-------------------------------------------------------------------------
+Delay:               3.506ns (Levels of Logic = 6)
+  Source:            rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1 (FF)
+  Destination:       rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/decoder_err (FF)
+  Source Clock:      iclock_manager/CLKOUT3_BUF rising
+  Destination Clock: iclock_manager/CLKOUT3_BUF falling
+
+  Data Path: rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1 to rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/decoder_err
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.471   1.096  data_8_1 (data_8_1)
+     end scope: 'rec_sync_inst'
+     begin scope: 'decode_8b10b_inst'
+     LUT6:I0->O            6   0.094   0.507  disp6n1 (disp6n)
+     end scope: 'decode_8b10b_inst'
+     LUT5:I4->O            1   0.094   0.576  decoder_err_or0000476_SW0 (N288)
+     LUT6:I4->O            1   0.094   0.480  decoder_err_or0000476 (decoder_err_or0000476)
+     LUT6:I5->O            1   0.094   0.000  decoder_err_or00005901 (decoder_err_or0000590)
+     FDRS_1:D                 -0.018          decoder_err
+    ----------------------------------------
+    Total                      3.506ns (0.847ns logic, 2.659ns route)
+                                       (24.2% logic, 75.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'iclock_manager/CLKOUT0_BUF'
+  Clock period: 3.839ns (frequency: 260.485MHz)
+  Total number of paths / destination ports: 752 / 364
+-------------------------------------------------------------------------
+Delay:               3.839ns (Levels of Logic = 2)
+  Source:            rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/sdd0 (FF)
+  Destination:       rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/sdataout (FF)
+  Source Clock:      iclock_manager/CLKOUT0_BUF rising
+  Destination Clock: iclock_manager/CLKOUT0_BUF rising
+
+  Data Path: rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/sdd0 to rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/sdataout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRL16:CLK->Q          1   1.889   0.789  sdd0 (dd0)
+     LUT4:I0->O            1   0.094   0.973  sdataout_or0000_SW0 (N48)
+     LUT5:I0->O            1   0.094   0.000  sdataout_or0000 (sdataout_or0000)
      FDPE:D                   -0.018          sdataout
     ----------------------------------------
-    Total                      3.133ns (2.077ns logic, 1.056ns route)
-                                       (66.3% logic, 33.7% route)
+    Total                      3.839ns (2.077ns logic, 1.762ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'iclock_manager/CLKOUT1_BUF'
+  Clock period: 0.812ns (frequency: 1231.527MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               0.812ns (Levels of Logic = 0)
+  Source:            rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/DDRQ_DLY_0 (FF)
+  Destination:       rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/DDRQ_DATA_2 (FF)
+  Source Clock:      iclock_manager/CLKOUT1_BUF rising
+  Destination Clock: iclock_manager/CLKOUT1_BUF rising
+
+  Data Path: rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/DDRQ_DLY_0 to rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/DDRQ_DATA_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.471   0.341  DDRQ_DLY_0 (DDRQ_DLY_0)
+     FD:D                     -0.018          DDRQ_DATA_2
+    ----------------------------------------
+    Total                      0.812ns (0.471ns logic, 0.341ns route)
+                                       (58.0% logic, 42.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'REG_CLK'
-  Total number of paths / destination ports: 149 / 149
+  Total number of paths / destination ports: 194 / 170
 -------------------------------------------------------------------------
 Offset:              3.446ns (Levels of Logic = 4)
   Source:            USR_TX_AFULL (PAD)
@@ -2020,13 +2148,13 @@ Offset:              3.446ns (Levels of Logic = 4)
                                        (39.3% logic, 60.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_50M'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'iclock_manager/CLKOUT1_BUF'
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
 Offset:              0.336ns (Levels of Logic = 0)
   Source:            rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/IDDR_inst:Q2 (PAD)
   Destination:       rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/DDRQ_DLY_0 (FF)
-  Destination Clock: CLK_50M rising 6.4X
+  Destination Clock: iclock_manager/CLKOUT1_BUF rising
 
   Data Path: rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/IDDR_inst:Q2 to rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/DDRQ_DLY_0
                                 Gate     Net
@@ -2039,13 +2167,13 @@ Offset:              0.336ns (Levels of Logic = 0)
                                        (0.0% logic, 100.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_50M'
-  Total number of paths / destination ports: 17 / 17
+Timing constraint: Default OFFSET OUT AFTER for Clock 'iclock_manager/CLKOUT2_BUF'
+  Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
 Offset:              3.395ns (Levels of Logic = 2)
   Source:            icmd/i_cmd_seq_core/MANCHESTER_CODE_INST_0 (FF)
   Destination:       CMDDCI_0n (PAD)
-  Source Clock:      CLK_50M rising 0.8X
+  Source Clock:      iclock_manager/CLKOUT2_BUF rising
 
   Data Path: icmd/i_cmd_seq_core/MANCHESTER_CODE_INST_0 to CMDDCI_0n
                                 Gate     Net
@@ -2063,7 +2191,7 @@ Offset:              3.395ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'REG_CLK'
   Total number of paths / destination ports: 181 / 12
 -------------------------------------------------------------------------
-Offset:              6.927ns (Levels of Logic = 17)
+Offset:              6.921ns (Levels of Logic = 17)
   Source:            i_data_fifo/fifo_i/wr_pointer_0 (FF)
   Destination:       LED<2> (PAD)
   Source Clock:      REG_CLK rising
@@ -2086,18 +2214,41 @@ Offset:              6.927ns (Levels of Logic = 17)
      XORCY:CI->O           1   0.357   0.710  Madd_full_addsub0000_xor<9> (full_addsub0000<9>)
      LUT6:I3->O            1   0.094   0.000  Mcompar_full_cmp_eq0002_lut<3> (Mcompar_full_cmp_eq0002_lut<3>)
      MUXCY:S->O            1   0.372   0.000  Mcompar_full_cmp_eq0002_cy<3> (Mcompar_full_cmp_eq0002_cy<3>)
-     MUXCY:CI->O           2   0.254   0.485  Mcompar_full_cmp_eq0002_cy<4> (full_cmp_eq0002)
-     LUT5:I4->O           13   0.094   0.402  full119 (full)
+     MUXCY:CI->O           8   0.254   0.518  Mcompar_full_cmp_eq0002_cy<4> (full_cmp_eq0002)
+     LUT3:I2->O            6   0.094   0.363  full119 (full)
      end scope: 'fifo_i'
      end scope: 'i_data_fifo'
      OBUF:I->O                 2.452          LED_2_OBUF (LED<2>)
     ----------------------------------------
-    Total                      6.927ns (4.912ns logic, 2.015ns route)
-                                       (70.9% logic, 29.1% route)
+    Total                      6.921ns (4.912ns logic, 2.009ns route)
+                                       (71.0% logic, 29.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'iclock_manager/CLKOUT3_BUF'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.259ns (Levels of Logic = 3)
+  Source:            rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/rec_sync_ready (FF)
+  Destination:       LED<0> (PAD)
+  Source Clock:      iclock_manager/CLKOUT3_BUF rising
+
+  Data Path: rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/rec_sync_ready to LED<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.471   0.336  rec_sync_ready (rec_sync_ready)
+     end scope: 'rec_sync_inst'
+     end scope: 'ireceiver_logic'
+     end scope: 'i_fei4_rx_core'
+     end scope: 'rx_gen[0].i_fei4_rx'
+     OBUF:I->O                 2.452          LED_0_OBUF (LED<0>)
+    ----------------------------------------
+    Total                      3.259ns (2.923ns logic, 0.336ns route)
+                                       (89.7% logic, 10.3% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 10 / 6
+  Total number of paths / destination ports: 13 / 9
 -------------------------------------------------------------------------
 Delay:               4.511ns (Levels of Logic = 3)
   Source:            USR_TX_AFULL (PAD)
@@ -2117,14 +2268,14 @@ Delay:               4.511ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 78.00 secs
-Total CPU time to Xst completion: 77.47 secs
+Total REAL time to Xst completion: 60.00 secs
+Total CPU time to Xst completion: 60.49 secs
  
 --> 
 
-Total memory usage is 446004 kilobytes
+Total memory usage is 445876 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   80 (   0 filtered)
+Number of warnings :   84 (   0 filtered)
 Number of infos    :   38 (   0 filtered)
 
