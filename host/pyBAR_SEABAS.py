@@ -117,6 +117,12 @@ print "here 0"
 chip.init()
 
 print "here 1"
+
+chip['cmd'].set_data([0xa5]*10)
+chip['cmd'].set_size(8*10)
+chip['cmd'].start()
+
+print "here 2"
     
 
 

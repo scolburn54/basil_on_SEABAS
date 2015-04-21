@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-04-13T15:42:48</DateModified>
+  <DateModified>2015-04-14T09:02:52</DateModified>
   <ModuleName>top</ModuleName>
   <SummaryTimeStamp>2015-04-13T15:03:15</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/iseconfig/top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise\</ImplementationReportsDirectory>
   <DateInitialized>2015-04-10T14:13:17</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
