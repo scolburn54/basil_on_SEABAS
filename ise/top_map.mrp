@@ -10,45 +10,45 @@ Target Device  : xc5vlx50
 Target Package : ff676
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.55 $
-Mapped Date    : Mon Apr 13 15:48:32 2015
+Mapped Date    : Wed Apr 22 10:57:26 2015
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings: 1837
+Number of warnings: 1811
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,754 out of  28,800    6%
-    Number used as Flip Flops:               1,751
+  Number of Slice Registers:                 1,760 out of  28,800    6%
+    Number used as Flip Flops:               1,757
     Number used as Latches:                      1
     Number used as Latch-thrus:                  2
-  Number of Slice LUTs:                      3,208 out of  28,800   11%
-    Number used as logic:                    2,556 out of  28,800    8%
-      Number using O6 output only:           1,823
-      Number using O5 output only:             417
+  Number of Slice LUTs:                      3,212 out of  28,800   11%
+    Number used as logic:                    2,558 out of  28,800    8%
+      Number using O6 output only:           1,826
+      Number using O5 output only:             416
       Number using O5 and O6:                  316
-    Number used as Memory:                     617 out of   7,680    8%
+    Number used as Memory:                     618 out of   7,680    8%
       Number used as Dual Port RAM:            192
         Number using O6 output only:           128
         Number using O5 and O6:                 64
       Number used as Single Port RAM:          256
         Number using O6 output only:           256
-      Number used as Shift Register:           169
-        Number using O6 output only:           167
+      Number used as Shift Register:           170
+        Number using O6 output only:           168
         Number using O5 output only:             1
         Number using O5 and O6:                  1
-    Number used as exclusive route-thru:        35
-  Number of route-thrus:                       449
-    Number using O6 output only:               449
+    Number used as exclusive route-thru:        36
+  Number of route-thrus:                       451
+    Number using O6 output only:               451
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,357 out of   7,200   18%
-  Number of LUT Flip Flop pairs used:        3,897
-    Number with an unused Flip Flop:         2,143 out of   3,897   54%
-    Number with an unused LUT:                 689 out of   3,897   17%
-    Number of fully used LUT-FF pairs:       1,065 out of   3,897   27%
+  Number of occupied Slices:                 1,475 out of   7,200   20%
+  Number of LUT Flip Flop pairs used:        3,992
+    Number with an unused Flip Flop:         2,232 out of   3,992   55%
+    Number with an unused LUT:                 780 out of   3,992   19%
+    Number of fully used LUT-FF pairs:         980 out of   3,992   24%
     Number of unique control sets:             243
     Number of slice register sites lost
-      to control set restrictions:             298 out of  28,800    1%
+      to control set restrictions:             299 out of  28,800    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -66,8 +66,8 @@ IO Utilization:
     IOB Slave Pads:                              8
 
 Specific Feature Utilization:
-  Number of BlockRAM/FIFO:                      13 out of      48   27%
-    Number using BlockRAM only:                 13
+  Number of BlockRAM/FIFO:                      12 out of      48   25%
+    Number using BlockRAM only:                 12
     Total primitives used:
       Number of 36k BlockRAM used:               8
       Number of 18k BlockRAM used:               6
@@ -80,8 +80,8 @@ Specific Feature Utilization:
   Number of RPM macros:            9
 Average Fanout of Non-Clock Nets:                3.95
 
-Peak Memory Usage:  545 MB
-Total REAL time to MAP completion:  52 secs 
+Peak Memory Usage:  547 MB
+Total REAL time to MAP completion:  59 secs 
 Total CPU time to MAP completion:   39 secs 
 
 Table of Contents
@@ -123,150 +123,6 @@ WARNING:MapLib:23 - Short on signal LED<5> detected.
 WARNING:MapLib:23 - Short on signal LED<5> detected.
 WARNING:MapLib:23 - Short on signal LED<7> detected.
 WARNING:MapLib:23 - Short on signal LED<7> detected.
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAU connected to power/ground net
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAL connected to power/ground net
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBU connected to power/ground net
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBL connected to power/ground net
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAU connected to power/ground net
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAL connected to power/ground net
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBU connected to power/ground net
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBL connected to power/ground net
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAU connected to power/ground net
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAL connected to power/ground net
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBU connected to power/ground net
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBL connected to power/ground net
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAU connected to power/ground net
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAL connected to power/ground net
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBU connected to power/ground net
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBL connected to power/ground net
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem1
-   of frag REGCLKAU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem1_REGCLKAU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem1
-   of frag REGCLKAL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem1_REGCLKAL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem1
-   of frag REGCLKBU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem1_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem1
-   of frag REGCLKBL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem1_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem2
-   of frag REGCLKAU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem2_REGCLKAU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem2
-   of frag REGCLKAL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem2_REGCLKAL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem2
-   of frag REGCLKBU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem2_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem2
-   of frag REGCLKBL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem2_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem3
-   of frag REGCLKAU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem3_REGCLKAU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem3
-   of frag REGCLKAL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem3_REGCLKAL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem3
-   of frag REGCLKBU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem3_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem3
-   of frag REGCLKBL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem3_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem4
-   of frag REGCLKAU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem4_REGCLKAU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem4
-   of frag REGCLKAL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem4_REGCLKAL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem4
-   of frag REGCLKBU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem4_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem4
-   of frag REGCLKBL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem4_REGCLKBL_tiesig
 WARNING:Pack:2548 - The register "slave/recvBuf_0" has the property IOB=TRUE,
    but was not packed into the ILOGIC component. The ILOGIC component already
    contains an IFF or IDDR.
@@ -1246,6 +1102,10 @@ WARNING:Pack:2780 - The register
    DDR[2].U_iCAP_ADDR" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
+   "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_SING
+   LE_ROW.U_RD_COL_ADDR/u_cnt/G[2].U_FDRE" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
    "rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/cdc_syncfifo_i/wptr_full_
    inst/wbin_0" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
@@ -1369,6 +1229,11 @@ WARNING:Pack:2780 - The register "icmd/i_cmd_seq_core/repeat_cnt_29" has the
 WARNING:Pack:2780 - The register "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_RISING"
    has the property IOB=TRUE, but it did not join an IO component because it is
    not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_SING
+   LE_ROW.U_RD_COL_ADDR_DLY/G_REG_BIT[2].U_FDRE" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
 WARNING:Pack:2780 - The register
    "rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/cdc_syncfifo_i/rptr_empty
    _inst/rbin_0" has the property IOB=TRUE, but it did not join an IO component
@@ -1702,6 +1567,11 @@ WARNING:Pack:2780 - The register
    "rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/wait_cnt_9"
    has the property IOB=TRUE, but it did not join an IO component because it is
    not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_matc
+   h/I_CS_GANDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/G_GAND_DLY1[3].I_IN_RANGE.
+   I_USE_INPUT_REG_NE0.U_GAND_DLY1" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_matc
    h/I_CS_GANDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/G_GAND_DLY1[2].I_IN_RANGE.
@@ -5295,6 +5165,9 @@ WARNING:Pack:2780 - The register "slave/recvBuf_8" has the property IOB=TRUE,
 WARNING:Pack:2780 - The register "slave/recvBuf_9" has the property IOB=TRUE,
    but it did not join an IO component because it is not connected to any IO
    element.
+WARNING:Pack:2780 - The register "U_ila_pro_0/U0/I_TQ0.G_TW[3].U_TQ" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
 WARNING:Pack:2780 - The register "icmd/i_cmd_seq_core/repeat_cnt_0" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
@@ -5575,6 +5448,11 @@ WARNING:Pack:2780 - The register
    "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_RESET_EDGE/I_H2L.U_DOUT" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register
+   "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_matc
+   h/I_CS_GANDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/G_GAND_DLY2[3].I_IN_RANGE.
+   U_GAND_DLY2" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_R
    OW_ADDR/G[5].U_FDRE" has the property IOB=TRUE, but it did not join an IO
@@ -6343,6 +6221,10 @@ WARNING:Pack:2780 - The register
    "rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/ddp" has
    the property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register
+   "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.FF"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
 WARNING:Pack:2780 - The register "icmd/i_cmd_seq_core/start_repeat_sync/OUT_0"
    has the property IOB=TRUE, but it did not join an IO component because it is
    not connected to any IO element.
@@ -6933,7 +6815,7 @@ INFO:Pack:1650 - Map created a placed design.
 Section 4 - Removed Logic Summary
 ---------------------------------
   63 block(s) removed
- 130 block(s) optimized away
+ 131 block(s) optimized away
   31 signal(s) removed
 
 Section 5 - Removed Logic
@@ -7418,9 +7300,7 @@ U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS1_MSET
 U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCRST_MSET
 U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_
 CS_GANDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_NE0.U_
-GAND_SRL_SET/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I
-_CS_GANDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/U_CS_GAND_SRL_V5/I_USE_RPM_NE0.U
-_GAND_SRL_SET_MSET
+GAND_SRL_SET/U_CS_GAND_SRL_V5/I_USE_RPM_NE0.U_GAND_SRL_SET_MSET
 
 Section 8 - Guide Report
 ------------------------

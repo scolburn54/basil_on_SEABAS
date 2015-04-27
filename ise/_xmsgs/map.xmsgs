@@ -74,138 +74,10 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">LED&lt;7&gt;</arg> detected.
 </msg>
 
-<msg type="info" file="MapLib" num="856" delta="new" >PLL_ADV <arg fmt="%s" index="1">iclock_manager/PLL_ADV_INST</arg> CLKIN2 pin was disconnected because a constant 1 is driving the CLKINSEL pin.
+<msg type="info" file="MapLib" num="856" delta="old" >PLL_ADV <arg fmt="%s" index="1">iclock_manager/PLL_ADV_INST</arg> CLKIN2 pin was disconnected because a constant 1 is driving the CLKINSEL pin.
 </msg>
 
-<msg type="info" file="MapLib" num="841" delta="new" >Changing COMPENSATION attribute from <arg fmt="%s" index="1">SYSTEM_SYNCHRONOUS</arg> to <arg fmt="%s" index="2">INTERNAL</arg> for PLL_ADV <arg fmt="%s" index="3">iclock_manager/PLL_ADV_INST</arg>.
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKAU</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKAL</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKBU</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKAU</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKAL</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKBU</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKAU</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKAL</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKBU</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKAU</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKAL</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKBU</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <arg fmt="%s" index="3">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKAU</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem1_REGCLKAU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKAL</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem1_REGCLKAL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKBU</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem1_REGCLKBU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem1</arg>
-of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem1_REGCLKBL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem2</arg>
-of frag <arg fmt="%s" index="2">REGCLKAU</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem2_REGCLKAU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem2</arg>
-of frag <arg fmt="%s" index="2">REGCLKAL</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem2_REGCLKAL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem2</arg>
-of frag <arg fmt="%s" index="2">REGCLKBU</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem2_REGCLKBU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem2</arg>
-of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem2_REGCLKBL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem3</arg>
-of frag <arg fmt="%s" index="2">REGCLKAU</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem3_REGCLKAU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem3</arg>
-of frag <arg fmt="%s" index="2">REGCLKAL</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem3_REGCLKAL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem3</arg>
-of frag <arg fmt="%s" index="2">REGCLKBU</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem3_REGCLKBU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem3</arg>
-of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem3_REGCLKBL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem4</arg>
-of frag <arg fmt="%s" index="2">REGCLKAU</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem4_REGCLKAU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem4</arg>
-of frag <arg fmt="%s" index="2">REGCLKAL</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem4_REGCLKAL_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem4</arg>
-of frag <arg fmt="%s" index="2">REGCLKBU</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem4_REGCLKBU_tiesig</arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2874" delta="old" >Trimming timing constraints from pin <arg fmt="%s" index="1">i_data_fifo/fifo_i/Mram_mem4</arg>
-of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <arg fmt="%s" index="3">i_data_fifo/fifo_i/Mram_mem4_REGCLKBL_tiesig</arg>
+<msg type="info" file="MapLib" num="841" delta="old" >Changing COMPENSATION attribute from <arg fmt="%s" index="1">SYSTEM_SYNCHRONOUS</arg> to <arg fmt="%s" index="2">INTERNAL</arg> for PLL_ADV <arg fmt="%s" index="3">iclock_manager/PLL_ADV_INST</arg>.
 </msg>
 
 <msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">slave/recvBuf_0</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2">The ILOGIC component already contains an IFF or IDDR.</arg>
@@ -991,6 +863,9 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[2].U_iCAP_ADDR</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_SINGLE_ROW.U_RD_COL_ADDR/u_cnt/G[2].U_FDRE</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+</msg>
+
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/cdc_syncfifo_i/wptr_full_inst/wbin_0</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
@@ -1100,6 +975,9 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 </msg>
 
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_RISING</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+</msg>
+
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_SINGLE_ROW.U_RD_COL_ADDR_DLY/G_REG_BIT[2].U_FDRE</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/cdc_syncfifo_i/rptr_empty_inst/rbin_0</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
@@ -1354,6 +1232,9 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/wait_cnt_9</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/G_GAND_DLY1[3].I_IN_RANGE.I_USE_INPUT_REG_NE0.U_GAND_DLY1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+</msg>
+
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/G_GAND_DLY1[2].I_IN_RANGE.I_USE_INPUT_REG_NE0.U_GAND_DLY1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
@@ -1363,52 +1244,52 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/G_GAND_DLY1[0].I_IN_RANGE.I_USE_INPUT_REG_NE0.U_GAND_DLY1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[0].I_SRLT_NE_0.FF</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
@@ -1591,7 +1472,7 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">icmd/i_cmd_seq_core/stop_repeat_sync/OUT_9</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">slave/orRegAddr_18_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">slave/orRegAddr_18_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[1].U_RST</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
@@ -4237,6 +4118,9 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">slave/recvBuf_9</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">U_ila_pro_0/U0/I_TQ0.G_TW[3].U_TQ</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+</msg>
+
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">icmd/i_cmd_seq_core/repeat_cnt_0</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
@@ -4478,6 +4362,9 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 </msg>
 
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_RESET_EDGE/I_H2L.U_DOUT</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+</msg>
+
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/G_GAND_DLY2[3].I_IN_RANGE.U_GAND_DLY2</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_ROW_ADDR/G[5].U_FDRE</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
@@ -5071,6 +4958,9 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/ddp</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.FF</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+</msg>
+
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">icmd/i_cmd_seq_core/start_repeat_sync/OUT_0</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
@@ -5473,112 +5363,112 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">icon_control0&lt;13&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp273.PULL</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp273.PULL</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp273.PULL.1</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp273.PULL.1</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp273.PULL.2</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp273.PULL.2</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.1</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.1</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.2</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.2</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.3</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.3</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.4</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.4</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.5</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.5</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.4</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.4</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.4</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.4</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.6</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.6</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.5</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.5</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.5</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.5</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.7</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.7</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.6</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.6</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.6</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.6</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.7</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.7</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.7</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.7</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="2236" delta="new" >The DIVCLK_DIVIDE value <arg fmt="%s" index="1">5</arg> of <arg fmt="%s" index="2">PLL_ADV</arg> instance <arg fmt="%s" index="3">iclock_manager/PLL_ADV_INST</arg> is <arg fmt="%s" index="4">above</arg> the Fin / Fpfd value <arg fmt="%f" index="5">2.631579</arg>, where Fin is the input frequency, <arg fmt="%f" index="6">50.000000</arg> MHz, and Fpfd min - max values of <arg fmt="%f" index="7">19.000000</arg> - <arg fmt="%f" index="8">450.000000</arg> MHz.
+<msg type="warning" file="PhysDesignRules" num="2236" delta="old" >The DIVCLK_DIVIDE value <arg fmt="%s" index="1">5</arg> of <arg fmt="%s" index="2">PLL_ADV</arg> instance <arg fmt="%s" index="3">iclock_manager/PLL_ADV_INST</arg> is <arg fmt="%s" index="4">above</arg> the Fin / Fpfd value <arg fmt="%f" index="5">2.631579</arg>, where Fin is the input frequency, <arg fmt="%f" index="6">50.000000</arg> MHz, and Fpfd min - max values of <arg fmt="%f" index="7">19.000000</arg> - <arg fmt="%f" index="8">450.000000</arg> MHz.
 </msg>
 
 </messages>
