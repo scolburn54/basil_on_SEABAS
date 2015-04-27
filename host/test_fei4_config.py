@@ -116,15 +116,6 @@ cnfg = yaml.load(stream)
 dut = Dut(cnfg)
 dut.init()
 
-# enabling readout
-dut['rx']['CH1'] = 1
-dut['rx']['CH2'] = 1
-dut['rx']['CH3'] = 1
-dut['rx']['CH4'] = 1
-dut['rx']['TLU'] = 1
-dut['rx']['TDC'] = 1
-dut['rx'].write()
-
 def cmd(data, size):
     dut['cmd']['CMD_SIZE'] = size
     dut['cmd'].set_data(data)
