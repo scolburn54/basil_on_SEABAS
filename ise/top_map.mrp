@@ -10,7 +10,7 @@ Target Device  : xc5vlx50
 Target Package : ff676
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.55 $
-Mapped Date    : Wed Apr 22 10:57:26 2015
+Mapped Date    : Mon Apr 27 17:54:57 2015
 
 Design Summary
 --------------
@@ -80,9 +80,9 @@ Specific Feature Utilization:
   Number of RPM macros:            9
 Average Fanout of Non-Clock Nets:                3.95
 
-Peak Memory Usage:  547 MB
-Total REAL time to MAP completion:  59 secs 
-Total CPU time to MAP completion:   39 secs 
+Peak Memory Usage:  548 MB
+Total REAL time to MAP completion:  50 secs 
+Total CPU time to MAP completion:   38 secs 
 
 Table of Contents
 -----------------

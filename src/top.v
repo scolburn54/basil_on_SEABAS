@@ -124,15 +124,20 @@ wire CMD_DATA1;
 wire CMD_DATA2;
 wire CMD_DATA3;
 
+
+
 wire dobout_0_s;
 wire dobout_1_s;
 wire dobout_2_s;
 wire dobout_3_s;
 
+
 assign DOBOUT[0] = dobout_0_s;
 assign DOBOUT[1] = dobout_1_s;
 assign DOBOUT[2] = dobout_2_s;
 assign DOBOUT[3] = dobout_3_s;
+
+
 
 /*
 wire CMD_CLK_BUF_OUT;

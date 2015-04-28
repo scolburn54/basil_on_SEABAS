@@ -1,5 +1,5 @@
 #ChipScope Core Inserter Project File Version 3.0
-#Wed Apr 22 10:52:12 PDT 2015
+#Mon Apr 27 17:48:02 PDT 2015
 Project.device.designInputFile=C\:\\Users\\Shane\\Desktop\\UW\\FPGA_Research\\SEABAS_project\\pyBAR_work\\basil_on_SEABAS\\ise\\top_cs.ngc
 Project.device.designOutputFile=C\:\\Users\\Shane\\Desktop\\UW\\FPGA_Research\\SEABAS_project\\pyBAR_work\\basil_on_SEABAS\\ise\\top_cs.ngc
 Project.device.deviceFamily=14
@@ -20,10 +20,10 @@ Project.unit<0>.dataChannel<0>=RBCP_ACK
 Project.unit<0>.dataChannel<1>=BUS_RD
 Project.unit<0>.dataChannel<2>=BUS_WR
 Project.unit<0>.dataChannel<3>=icmd i_cmd_seq_core cmd_data_ser
-Project.unit<0>.dataChannel<4>=icmd i_cmd_seq_core CMD_CLK_IN
+Project.unit<0>.dataChannel<4>=dobout_0_s
 Project.unit<0>.dataDepth=1024
 Project.unit<0>.dataEqualsTrigger=true
-Project.unit<0>.dataPortWidth=5
+Project.unit<0>.dataPortWidth=4
 Project.unit<0>.enableGaps=false
 Project.unit<0>.enableStorageQualification=true
 Project.unit<0>.enableTimestamps=false
@@ -33,7 +33,7 @@ Project.unit<0>.triggerChannel<0><0>=RBCP_ACK
 Project.unit<0>.triggerChannel<0><1>=BUS_RD
 Project.unit<0>.triggerChannel<0><2>=BUS_WR
 Project.unit<0>.triggerChannel<0><3>=icmd i_cmd_seq_core cmd_data_ser
-Project.unit<0>.triggerChannel<0><4>=icmd i_cmd_seq_core CMD_CLK_IN
+Project.unit<0>.triggerChannel<0><4>=dobout_0_s
 Project.unit<0>.triggerConditionCountWidth=0
 Project.unit<0>.triggerMatchCount<0>=1
 Project.unit<0>.triggerMatchCountWidth<0><0>=0

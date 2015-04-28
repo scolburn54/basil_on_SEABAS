@@ -107,7 +107,7 @@
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">LOCKED1</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">CLKIN_IBUFG</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">CLKIN_IBUFG</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">CLKFX_BUF</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
