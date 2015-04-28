@@ -10,153 +10,27 @@ Target Device  : xc5vlx50
 Target Package : ff676
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.55 $
-Mapped Date    : Fri Apr 10 14:22:21 2015
+Mapped Date    : Mon Apr 27 17:54:57 2015
 
 Mapping design into LUTs...
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAU connected to power/ground net
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAL connected to power/ground net
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBU connected to power/ground net
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBL connected to power/ground net
-   rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAU connected to power/ground net
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAL connected to power/ground net
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBU connected to power/ground net
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBL connected to power/ground net
-   rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAU connected to power/ground net
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAL connected to power/ground net
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBU connected to power/ground net
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBL connected to power/ground net
-   rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAU connected to power/ground net
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKAL connected to power/ground net
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKAL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBU connected to power/ground net
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBU_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1
-   of frag REGCLKBL connected to power/ground net
-   rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/fifo_i/Mram_mem1_REGCLKBL_
-   tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem1
-   of frag REGCLKAU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem1_REGCLKAU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem1
-   of frag REGCLKAL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem1_REGCLKAL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem1
-   of frag REGCLKBU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem1_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem1
-   of frag REGCLKBL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem1_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem2
-   of frag REGCLKAU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem2_REGCLKAU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem2
-   of frag REGCLKAL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem2_REGCLKAL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem2
-   of frag REGCLKBU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem2_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem2
-   of frag REGCLKBL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem2_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem3
-   of frag REGCLKAU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem3_REGCLKAU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem3
-   of frag REGCLKAL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem3_REGCLKAL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem3
-   of frag REGCLKBU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem3_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem3
-   of frag REGCLKBL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem3_REGCLKBL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem4
-   of frag REGCLKAU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem4_REGCLKAU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem4
-   of frag REGCLKAL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem4_REGCLKAL_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem4
-   of frag REGCLKBU connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem4_REGCLKBU_tiesig
-WARNING:Pack:2874 - Trimming timing constraints from pin
-   i_data_fifo/fifo_i/Mram_mem4
-   of frag REGCLKBL connected to power/ground net
-   i_data_fifo/fifo_i/Mram_mem4_REGCLKBL_tiesig
+WARNING:MapLib:23 - Short on signal LED<7> detected.
+WARNING:MapLib:23 - Short on signal LED<5> detected.
+WARNING:MapLib:23 - Short on signal LED<3> detected.
+WARNING:MapLib:23 - Short on signal LED<7> detected.
+WARNING:MapLib:23 - Short on signal LED<5> detected.
+WARNING:MapLib:23 - Short on signal LED<3> detected.
+WARNING:MapLib:23 - Short on signal LED<7> detected.
+WARNING:MapLib:23 - Short on signal LED<5> detected.
+WARNING:MapLib:23 - Short on signal LED<3> detected.
+WARNING:MapLib:23 - Short on signal LED<7> detected.
+WARNING:MapLib:23 - Short on signal LED<5> detected.
+WARNING:MapLib:23 - Short on signal LED<3> detected.
+WARNING:MapLib:23 - Short on signal LED<3> detected.
+WARNING:MapLib:23 - Short on signal LED<3> detected.
+WARNING:MapLib:23 - Short on signal LED<5> detected.
+WARNING:MapLib:23 - Short on signal LED<5> detected.
+WARNING:MapLib:23 - Short on signal LED<7> detected.
+WARNING:MapLib:23 - Short on signal LED<7> detected.
 Running directed packing...
 WARNING:Pack:2548 - The register "slave/recvBuf_0" has the property IOB=TRUE,
    but was not packed into the ILOGIC component. The ILOGIC component already
@@ -1137,6 +1011,10 @@ WARNING:Pack:2780 - The register
    DDR[2].U_iCAP_ADDR" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
+   "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_SING
+   LE_ROW.U_RD_COL_ADDR/u_cnt/G[2].U_FDRE" has the property IOB=TRUE, but it did
+   not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
    "rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/cdc_syncfifo_i/wptr_full_
    inst/wbin_0" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
@@ -1260,6 +1138,11 @@ WARNING:Pack:2780 - The register "icmd/i_cmd_seq_core/repeat_cnt_29" has the
 WARNING:Pack:2780 - The register "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_RISING"
    has the property IOB=TRUE, but it did not join an IO component because it is
    not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_SING
+   LE_ROW.U_RD_COL_ADDR_DLY/G_REG_BIT[2].U_FDRE" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
 WARNING:Pack:2780 - The register
    "rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/cdc_syncfifo_i/rptr_empty
    _inst/rbin_0" has the property IOB=TRUE, but it did not join an IO component
@@ -1595,6 +1478,11 @@ WARNING:Pack:2780 - The register
    not connected to any IO element.
 WARNING:Pack:2780 - The register
    "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_matc
+   h/I_CS_GANDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/G_GAND_DLY1[3].I_IN_RANGE.
+   I_USE_INPUT_REG_NE0.U_GAND_DLY1" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_matc
    h/I_CS_GANDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/G_GAND_DLY1[2].I_IN_RANGE.
    I_USE_INPUT_REG_NE0.U_GAND_DLY1" has the property IOB=TRUE, but it did not
    join an IO component because it is not connected to any IO element.
@@ -1608,6 +1496,70 @@ WARNING:Pack:2780 - The register
    h/I_CS_GANDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/G_GAND_DLY1[0].I_IN_RANGE.
    I_USE_INPUT_REG_NE0.U_GAND_DLY1" has the property IOB=TRUE, but it did not
    join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_4_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_5_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_8_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[0].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[2].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[1].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/rec_sync_inst/data_9_1"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
 WARNING:Pack:2780 - The register
    "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[0].I_SRLT_NE_0.FF"
    has the property IOB=TRUE, but it did not join an IO component because it is
@@ -1832,6 +1784,9 @@ WARNING:Pack:2780 - The register "icmd/i_cmd_seq_core/stop_repeat_sync/OUT_8"
 WARNING:Pack:2780 - The register "icmd/i_cmd_seq_core/stop_repeat_sync/OUT_9"
    has the property IOB=TRUE, but it did not join an IO component because it is
    not connected to any IO element.
+WARNING:Pack:2780 - The register "slave/orRegAddr_18_1" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
 WARNING:Pack:2780 - The register
    "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[1].U_RST" has the property IOB=TRUE,
    but it did not join an IO component because it is not connected to any IO
@@ -5119,6 +5074,9 @@ WARNING:Pack:2780 - The register "slave/recvBuf_8" has the property IOB=TRUE,
 WARNING:Pack:2780 - The register "slave/recvBuf_9" has the property IOB=TRUE,
    but it did not join an IO component because it is not connected to any IO
    element.
+WARNING:Pack:2780 - The register "U_ila_pro_0/U0/I_TQ0.G_TW[3].U_TQ" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
 WARNING:Pack:2780 - The register "icmd/i_cmd_seq_core/repeat_cnt_0" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
@@ -5399,6 +5357,11 @@ WARNING:Pack:2780 - The register
    "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_RESET_EDGE/I_H2L.U_DOUT" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register
+   "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_matc
+   h/I_CS_GANDX.U_CS_GANDX_SRL/I_V5.U_CS_GANDX_SRL_V5/G_GAND_DLY2[3].I_IN_RANGE.
+   U_GAND_DLY2" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_R
    OW_ADDR/G[5].U_FDRE" has the property IOB=TRUE, but it did not join an IO
@@ -6167,6 +6130,10 @@ WARNING:Pack:2780 - The register
    "rx_gen[3].i_fei4_rx/i_fei4_rx_core/ireceiver_logic/sync_master_inst/ddp" has
    the property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register
+   "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.FF"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
 WARNING:Pack:2780 - The register "icmd/i_cmd_seq_core/start_repeat_sync/OUT_0"
    has the property IOB=TRUE, but it did not join an IO component because it is
    not connected to any IO element.
@@ -6613,116 +6580,229 @@ WARNING:Pack:2780 - The register
    "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_0_TO_64K.F_SEL
    [7].U_SEL" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
+WARNING:Pack:1186 - One or more I/O components have conflicting property values.
+    For each occurrence, the system will use the property value attached to the
+   pad.  Otherwise, the system will use the first property value read.  To view
+   each occurrence, create a detailed map report (run map using the -detail
+   option).
 Running delay-based LUT packing...
 Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 42 secs 
-Total CPU  time at the beginning of Placer: 22 secs 
+Total REAL time at the beginning of Placer: 29 secs 
+Total CPU  time at the beginning of Placer: 18 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:1e187a9) REAL time: 45 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:10f0945) REAL time: 31 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:1e187a9) REAL time: 45 secs 
+Phase 2.7  Design Feasibility Check (Checksum:10f0945) REAL time: 31 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:7f5ced81) REAL time: 45 secs 
+Phase 3.31  Local Placement Optimization (Checksum:660f725d) REAL time: 31 secs 
 
 Phase 4.37  Local Placement Optimization
-Phase 4.37  Local Placement Optimization (Checksum:7f5ced81) REAL time: 45 secs 
+Phase 4.37  Local Placement Optimization (Checksum:660f725d) REAL time: 31 secs 
 
 Phase 5.33  Local Placement Optimization
-Phase 5.33  Local Placement Optimization (Checksum:7f5ced81) REAL time: 48 secs 
+Phase 5.33  Local Placement Optimization (Checksum:660f725d) REAL time: 33 secs 
 
 Phase 6.32  Local Placement Optimization
-Phase 6.32  Local Placement Optimization (Checksum:7f5ced81) REAL time: 48 secs 
+Phase 6.32  Local Placement Optimization (Checksum:660f725d) REAL time: 33 secs 
 
 Phase 7.2  Initial Clock and IO Placement
-..........
-Phase 7.2  Initial Clock and IO Placement (Checksum:a341f14e) REAL time: 50 secs 
+
+........
+WARNING:Place:644 - A clock IOB clock component is not placed at an optimal
+   clock IOB site. The clock IOB component <REG_CLK> is placed at site <D26>.
+   The clock IO site can use the fast path between the IO and the Clock
+   buffer/GCLK if the IOB is placed in the master Clock IOB Site. This is
+   normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was applied on
+   COMP.PIN <REG_CLK.PAD> allowing your design to continue. This constraint
+   disables all clock placer rules related to the specified COMP.PIN. The use of
+   this override is highly discouraged as it may lead to very poor timing
+   results. It is recommended that this error condition be corrected in the
+   design.
+Phase 7.2  Initial Clock and IO Placement (Checksum:e325e6aa) REAL time: 35 secs 
 
 Phase 8.36  Local Placement Optimization
-Phase 8.36  Local Placement Optimization (Checksum:a341f14e) REAL time: 50 secs 
+Phase 8.36  Local Placement Optimization (Checksum:e325e6aa) REAL time: 35 secs 
 
 Phase 9.30  Global Clock Region Assignment
-Phase 9.30  Global Clock Region Assignment (Checksum:a341f14e) REAL time: 50 secs 
+Phase 9.30  Global Clock Region Assignment (Checksum:e325e6aa) REAL time: 35 secs 
 
 Phase 10.3  Local Placement Optimization
-......
-Phase 10.3  Local Placement Optimization (Checksum:e75fc1d2) REAL time: 50 secs 
+Phase 10.3  Local Placement Optimization (Checksum:e325e6aa) REAL time: 35 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:e75fc1d2) REAL time: 50 secs 
+Phase 11.5  Local Placement Optimization (Checksum:e325e6aa) REAL time: 35 secs 
 
 Phase 12.8  Global Placement
-..........................................................
-..................
-Phase 12.8  Global Placement (Checksum:fdbed25) REAL time: 54 secs 
+................................................................................................
+............................
+Phase 12.8  Global Placement (Checksum:ab4ac671) REAL time: 38 secs 
 
 Phase 13.29  Local Placement Optimization
-Phase 13.29  Local Placement Optimization (Checksum:fdbed25) REAL time: 54 secs 
+Phase 13.29  Local Placement Optimization (Checksum:ab4ac671) REAL time: 38 secs 
 
 Phase 14.5  Local Placement Optimization
-Phase 14.5  Local Placement Optimization (Checksum:fdbed25) REAL time: 54 secs 
+Phase 14.5  Local Placement Optimization (Checksum:ab4ac671) REAL time: 38 secs 
 
 Phase 15.18  Placement Optimization
-Phase 15.18  Placement Optimization (Checksum:c4fd1af1) REAL time: 1 mins 4 secs 
+Phase 15.18  Placement Optimization (Checksum:b41d27d1) REAL time: 45 secs 
 
 Phase 16.5  Local Placement Optimization
-Phase 16.5  Local Placement Optimization (Checksum:c4fd1af1) REAL time: 1 mins 5 secs 
+Phase 16.5  Local Placement Optimization (Checksum:b41d27d1) REAL time: 45 secs 
 
 Phase 17.34  Placement Validation
-Phase 17.34  Placement Validation (Checksum:c4fd1af1) REAL time: 1 mins 5 secs 
+Phase 17.34  Placement Validation (Checksum:b41d27d1) REAL time: 45 secs 
 
-Total REAL time to Placer completion: 1 mins 5 secs 
-Total CPU  time to Placer completion: 43 secs 
+Total REAL time to Placer completion: 45 secs 
+Total CPU  time to Placer completion: 33 secs 
 Running post-placement packing...
 Writing output files...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp273.PULL is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp273.PULL.1 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp273.PULL.2 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL. Adding a pullup, pulldown, or keeper to a differential IO
+   can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL.1. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL. Adding a pullup, pulldown, or keeper to a differential IO
+   can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL.2. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL.1 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL.1. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL.3. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL.2 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL.2. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL.3 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL.3. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp276.PULL. Adding a pullup, pulldown, or keeper to a differential IO
+   can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp276.PULL.1. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp277.PULL. Adding a pullup, pulldown, or keeper to a differential IO
+   can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp276.PULL.2. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp277.PULL.1. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp276.PULL.3. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp277.PULL.2. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp277.PULL.3. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL.4. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL.5. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL.4 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL.4. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL.6. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL.5 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL.5. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp274.PULL.7. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL.6 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL.6. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp275.PULL.7 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:732 - Unexpected differential configuration for comp
+   ProtoComp275.PULL.7. Adding a pullup, pulldown, or keeper to a differential
+   IO can create signal integrity problems and can violate specifications.
+WARNING:PhysDesignRules:2236 - The DIVCLK_DIVIDE value 5 of PLL_ADV instance
+   iclock_manager/PLL_ADV_INST is above the Fin / Fpfd value 2.631579, where Fin
+   is the input frequency, 50.000000 MHz, and Fpfd min - max values of 19.000000
+   - 450.000000 MHz.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings: 1764
+Number of warnings: 1811
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,737 out of  28,800    6%
-    Number used as Flip Flops:               1,734
+  Number of Slice Registers:                 1,760 out of  28,800    6%
+    Number used as Flip Flops:               1,757
     Number used as Latches:                      1
     Number used as Latch-thrus:                  2
-  Number of Slice LUTs:                      3,082 out of  28,800   10%
-    Number used as logic:                    2,431 out of  28,800    8%
-      Number using O6 output only:           1,660
-      Number using O5 output only:             417
-      Number using O5 and O6:                  354
-    Number used as Memory:                     617 out of   7,680    8%
+  Number of Slice LUTs:                      3,212 out of  28,800   11%
+    Number used as logic:                    2,558 out of  28,800    8%
+      Number using O6 output only:           1,826
+      Number using O5 output only:             416
+      Number using O5 and O6:                  316
+    Number used as Memory:                     618 out of   7,680    8%
       Number used as Dual Port RAM:            192
         Number using O6 output only:           128
         Number using O5 and O6:                 64
       Number used as Single Port RAM:          256
         Number using O6 output only:           256
-      Number used as Shift Register:           169
-        Number using O6 output only:           167
+      Number used as Shift Register:           170
+        Number using O6 output only:           168
         Number using O5 output only:             1
         Number using O5 and O6:                  1
-    Number used as exclusive route-thru:        34
-  Number of route-thrus:                       448
-    Number using O6 output only:               448
+    Number used as exclusive route-thru:        36
+  Number of route-thrus:                       451
+    Number using O6 output only:               451
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,341 out of   7,200   18%
-  Number of LUT Flip Flop pairs used:        3,775
-    Number with an unused Flip Flop:         2,038 out of   3,775   53%
-    Number with an unused LUT:                 693 out of   3,775   18%
-    Number of fully used LUT-FF pairs:       1,044 out of   3,775   27%
-    Number of unique control sets:             244
+  Number of occupied Slices:                 1,475 out of   7,200   20%
+  Number of LUT Flip Flop pairs used:        3,992
+    Number with an unused Flip Flop:         2,232 out of   3,992   55%
+    Number with an unused LUT:                 780 out of   3,992   19%
+    Number of fully used LUT-FF pairs:         980 out of   3,992   24%
+    Number of unique control sets:             243
     Number of slice register sites lost
-      to control set restrictions:             303 out of  28,800    1%
+      to control set restrictions:             299 out of  28,800    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -6733,7 +6813,8 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        52 out of     440   11%
+  Number of bonded IOBs:                        64 out of     440   14%
+    Number of LOCed IOBs:                       64 out of      64  100%
     IOB Flip Flops:                             15
     IOB Master Pads:                             8
     IOB Slave Pads:                              8
@@ -6745,17 +6826,17 @@ Specific Feature Utilization:
       Number of 36k BlockRAM used:               8
       Number of 18k BlockRAM used:               6
     Total Memory used (KB):                    396 out of   1,728   22%
-  Number of BUFG/BUFGCTRLs:                      8 out of      32   25%
-    Number used as BUFGs:                        8
+  Number of BUFG/BUFGCTRLs:                      6 out of      32   18%
+    Number used as BUFGs:                        6
   Number of BSCANs:                              1 out of       4   25%
-  Number of DCM_ADVs:                            2 out of      12   16%
+  Number of PLL_ADVs:                            1 out of       6   16%
 
   Number of RPM macros:            9
-Average Fanout of Non-Clock Nets:                3.99
+Average Fanout of Non-Clock Nets:                3.95
 
-Peak Memory Usage:  545 MB
-Total REAL time to MAP completion:  1 mins 10 secs 
-Total CPU time to MAP completion:   48 secs 
+Peak Memory Usage:  548 MB
+Total REAL time to MAP completion:  50 secs 
+Total CPU time to MAP completion:   38 secs 
 
 Mapping completed.
 See MAP report file "top_map.mrp" for details.

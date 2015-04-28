@@ -108,78 +108,26 @@ class Pixel(Dut):
         self['SEQ']['PIXEL_SHIFT_EN'].setall(False)
         self['SEQ']['INJECTION'].setall(False)
 
-print "Start"
-
+# Read in the configuration YAML file
 stream = open("pyBAR_SEABAS.yaml", 'r')
 cnfg = yaml.load(stream)
-chip = Pixel(cnfg)
-print "here 0"
-chip.init()
 
-print "here 1"
+# Create the Pixel object
+dut = Dut(cnfg)
+dut.init()
 
-chip['GPIO']['LED1'] = 1
-chip['GPIO']['LED2'] = 0
-chip['GPIO']['LED3'] = 0
-chip['GPIO']['LED4'] = 0
-chip['GPIO'].write()
-
-print "here 2"
- 
-
-#settings for global register (to input into global SR)
-# can be an integer representing the binary number desired,
-# or a bitarray (of the form bitarray("10101100")).
-chip['GLOBAL_REG']['global_readout_enable'] = 0# size = 1 bit
-chip['GLOBAL_REG']['SRDO_load'] = 0# size = 1 bit
-chip['GLOBAL_REG']['NCout2'] = 0# size = 1 bit
-chip['GLOBAL_REG']['count_hits_not'] = 0# size = 1
-chip['GLOBAL_REG']['count_enable'] = 0# size = 1
-chip['GLOBAL_REG']['count_clear_not'] = 0# size = 1
-chip['GLOBAL_REG']['S0'] = 0# size = 1
-chip['GLOBAL_REG']['S1'] = 0# size = 1
-chip['GLOBAL_REG']['config_mode'] = 3# size = 2
-chip['GLOBAL_REG']['LD_IN0_7'] = 0# size = 8
-chip['GLOBAL_REG']['LDENABLE_SEL'] = 0# size = 1
-chip['GLOBAL_REG']['SRCLR_SEL'] = 0# size = 1
-chip['GLOBAL_REG']['HITLD_IN'] = 0# size = 1
-chip['GLOBAL_REG']['NCout21_25'] = 0# size = 5
-chip['GLOBAL_REG']['column_address'] = 0# size = 6
-chip['GLOBAL_REG']['DisVbn'] = 0# size = 8
-chip['GLOBAL_REG']['VbpThStep'] = 0# size = 8
-chip['GLOBAL_REG']['PrmpVbp'] = 0# size = 8
-chip['GLOBAL_REG']['PrmpVbnFol'] = 0# size = 8
-chip['GLOBAL_REG']['vth'] = 0# size = 8
-chip['GLOBAL_REG']['PrmpVbf'] = 0# size = 8
-
-print "program global register..."
-chip.program_global_reg()
+def cmd(data, size):
+    dut['cmd']['CMD_SIZE'] = size
+    dut['cmd'].set_data(data)
+    dut['cmd']['START']
     
-#settings for pixel register (to input into pixel SR)
-# can be an integer representing the binary number desired,
-# or a bitarray (of the form bitarray("10101100")).
-
-chip['PIXEL_REG'][:] = bitarray('1111111010001100'*8)
-print chip['PIXEL_REG']
-#chip['PIXEL_REG'][0] = 0
-
-print "program pixel register..."
-chip.program_pixel_reg()
-
-time.sleep(0.5)
-# Get output size in bytes
-print "chip['DATA'].get_fifo_size() = ", chip['DATA'].get_fifo_size()
-
-rxd = chip['DATA'].get_data() #get data from sram fifo
-print rxd
-
-data0 = rxd.astype(np.uint8) # Change type to unsigned int 8 bits and take from rxd only the last 8 bits
-data1 = np.right_shift(rxd, 8).astype(np.uint8) # Rightshift rxd 8 bits and take again last 8 bits
-data = np.reshape(np.vstack((data1, data0)), -1, order='F') # data is now a 1 dimensional array of all bytes read from the FIFO
-bdata = np.unpackbits(data)
-
-print "data = ", data
-print "bdata = ", bdata 
+    while not dut['cmd']['READY']:
+        pass
     
+cmd([0xB4, 0x10, 0x37, 0x00, 0x00], 39) # settings PLL
+cmd([0xB4, 0x10, 0x38, 0x04, 0x0C], 39) #settings PLL
+cmd([0xB4, 0x50, 0x70], 23) # run mode
+cmd([0xB1, 0x00], 9) # ECR
+cmd([0xB4, 0x50, 0x0E], 23) # conf mode  
 
 

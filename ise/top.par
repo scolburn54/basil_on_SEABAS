@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-SHANE-PC::  Fri Apr 10 14:23:36 2015
+SHANE-PC::  Mon Apr 27 17:55:51 2015
 
 par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
 
@@ -21,63 +21,74 @@ Device speed data version:  "PRODUCTION 1.73 2013-10-13".
 Device Utilization Summary:
 
    Number of BSCANs                          1 out of 4      25%
-   Number of BUFGs                           8 out of 32     25%
-   Number of DCM_ADVs                        2 out of 12     16%
+   Number of BUFGs                           6 out of 32     18%
    Number of ILOGICs                         5 out of 560     1%
-   Number of External IOBs                  36 out of 440     8%
-      Number of LOCed IOBs                   0 out of 36      0%
+   Number of External IOBs                  48 out of 440    10%
+      Number of LOCed IOBs                  48 out of 48    100%
 
    Number of External IOBMs                  8 out of 220     3%
-      Number of LOCed IOBMs                  0 out of 8       0%
+      Number of LOCed IOBMs                  8 out of 8     100%
 
    Number of External IOBSs                  8 out of 220     3%
-      Number of LOCed IOBSs                  0 out of 8       0%
+      Number of LOCed IOBSs                  8 out of 8     100%
 
    Number of OLOGICs                        10 out of 560     1%
+   Number of PLL_ADVs                        1 out of 6      16%
    Number of RAMB18X2s                       4 out of 48      8%
    Number of RAMB36_EXPs                     8 out of 48     16%
-   Number of Slices                       1341 out of 7200   18%
-   Number of Slice Registers              1737 out of 28800   6%
-      Number used as Flip Flops           1734
+   Number of Slices                       1475 out of 7200   20%
+   Number of Slice Registers              1760 out of 28800   6%
+      Number used as Flip Flops           1757
       Number used as Latches                 1
       Number used as LatchThrus              2
 
-   Number of Slice LUTS                   3082 out of 28800  10%
-   Number of Slice LUT-Flip Flop pairs    3775 out of 28800  13%
+   Number of Slice LUTS                   3212 out of 28800  11%
+   Number of Slice LUT-Flip Flop pairs    3992 out of 28800  13%
 
 
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 13 secs 
-Finished initial Timing Analysis.  REAL time: 13 secs 
+Starting initial Timing Analysis.  REAL time: 11 secs 
+Finished initial Timing Analysis.  REAL time: 11 secs 
 
+WARNING:Par:288 - The signal USR_RX_RV_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal USR_ACTIVE_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal USR_RX_RD<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal USR_RX_RD<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal USR_RX_RD<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal USR_RX_RD<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal USR_RX_RD<4>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal USR_RX_RD<5>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal USR_RX_RD<6>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal USR_RX_RD<7>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal USR_RX_EMPTY_IBUF has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 18793 unrouted;      REAL time: 15 secs 
+Phase  1  : 19086 unrouted;      REAL time: 12 secs 
 
-Phase  2  : 15504 unrouted;      REAL time: 16 secs 
+Phase  2  : 15874 unrouted;      REAL time: 13 secs 
 
-Phase  3  : 5208 unrouted;      REAL time: 23 secs 
+Phase  3  : 5148 unrouted;      REAL time: 18 secs 
 
-Phase  4  : 5208 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
+Phase  4  : 5148 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 21 secs 
 
 Updating file: top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 30 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 24 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 30 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 24 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 30 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 24 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 30 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 24 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 30 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 24 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 31 secs 
-Total REAL time to Router completion: 31 secs 
-Total CPU time to Router completion: 29 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 25 secs 
+Total REAL time to Router completion: 25 secs 
+Total CPU time to Router completion: 25 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -95,22 +106,22 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|             BUS_CLK | BUFGCTRL_X0Y6| No   |  452 |  0.421     |  1.918      |
+|              CLK160 |BUFGCTRL_X0Y28| No   |  100 |  0.249     |  1.760      |
 +---------------------+--------------+------+------+------------+-------------+
-|    icon_control0<0> |BUFGCTRL_X0Y31| No   |   59 |  0.301     |  1.814      |
+|    icon_control0<0> |BUFGCTRL_X0Y23| No   |   58 |  0.180     |  1.682      |
 +---------------------+--------------+------+------+------------+-------------+
-|               CLK40 | BUFGCTRL_X0Y1| No   |   59 |  0.255     |  1.918      |
+|             BUS_CLK |BUFGCTRL_X0Y20| No   |  372 |  0.382     |  1.881      |
 +---------------------+--------------+------+------+------------+-------------+
-|              CLK160 | BUFGCTRL_X0Y0| No   |  102 |  0.266     |  1.816      |
+|               CLK40 |BUFGCTRL_X0Y21| No   |  126 |  0.273     |  1.792      |
 +---------------------+--------------+------+------+------------+-------------+
-|               CLK16 | BUFGCTRL_X0Y2| No   |  159 |  0.249     |  1.764      |
+|               CLK16 |BUFGCTRL_X0Y29| No   |  170 |  0.315     |  1.812      |
 +---------------------+--------------+------+------+------------+-------------+
-|              CLK320 | BUFGCTRL_X0Y3| No   |   16 |  0.121     |  1.789      |
+|              CLK320 |BUFGCTRL_X0Y19| No   |   15 |  0.208     |  1.726      |
 +---------------------+--------------+------+------+------------+-------------+
-|   icon_control0<13> |         Local|      |    5 |  0.000     |  0.819      |
+|   icon_control0<13> |         Local|      |    5 |  0.000     |  0.765      |
 +---------------------+--------------+------+------+------------+-------------+
 |U_icon_pro/U0/iUPDAT |              |      |      |            |             |
-|               E_OUT |         Local|      |    1 |  0.000     |  1.110      |
+|               E_OUT |         Local|      |    1 |  0.000     |  0.920      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -132,26 +143,26 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    11.890ns|     3.110ns|       0|           0
-   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.731ns|            |       0|           0
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    12.852ns|     2.148ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.564ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.128ns|     0.872ns|       0|           0
-   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.549ns|            |       0|           0
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.083ns|     0.917ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.586ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    24.574ns|     5.426ns|       0|           0
-  IGH 50%                                   | HOLD        |     0.465ns|            |       0|           0
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    24.967ns|     5.033ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.425ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     3.161ns|     N/A|           0
+  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     3.166ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J2_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J3_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     3.820ns|     N/A|           0
+  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     3.308ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     3.305ns|     N/A|           0
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     3.214ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     3.548ns|     N/A|           0
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     4.184ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -167,17 +178,19 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 34 secs 
-Total CPU time to PAR completion: 32 secs 
+WARNING:Par:283 - There are 11 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Peak Memory Usage:  453 MB
+Total REAL time to PAR completion: 27 secs 
+Total CPU time to PAR completion: 27 secs 
+
+Peak Memory Usage:  455 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
 Timing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 0
+Number of warning messages: 13
 Number of info messages: 0
 
 Writing design to file top.ncd

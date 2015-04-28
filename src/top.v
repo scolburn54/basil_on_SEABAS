@@ -124,15 +124,20 @@ wire CMD_DATA1;
 wire CMD_DATA2;
 wire CMD_DATA3;
 
+
+
 wire dobout_0_s;
 wire dobout_1_s;
 wire dobout_2_s;
 wire dobout_3_s;
 
+
 assign DOBOUT[0] = dobout_0_s;
 assign DOBOUT[1] = dobout_1_s;
 assign DOBOUT[2] = dobout_2_s;
 assign DOBOUT[3] = dobout_3_s;
+
+
 
 /*
 wire CMD_CLK_BUF_OUT;
@@ -276,137 +281,48 @@ assign RST_DLL = ~SW_RSTn;
 
 wire CLKIN_IBUFG;
 
-IBUFG  CLKIN_IBUFG_INST (.I(CLK_50M), .O(CLKIN_IBUFG));
+//IBUFG  CLKIN_IBUFG_INST (.I(CLK_50M), .O(CLKIN_IBUFG));
 wire CLK0_OUT, CLKFX_BUF, LOCKED1, CLKFB_IN;
 
-DCM_ADV #(
-  .CLKDV_DIVIDE(2.0), // Divide by: 1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5
-                      //   7.0,7.5,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0 or 16.0
-                      
-  .CLKFX_DIVIDE(5),   // Can be any integer from 1 to 32
-  .CLKFX_MULTIPLY(16), // Can be any integer from 2 to 32
-  
-  .CLKIN_DIVIDE_BY_2("FALSE"), // TRUE/FALSE to enable CLKIN divide by two feature
-  .CLKIN_PERIOD(20.0), // Specify period of input clock in ns from 1.25 to 1000.00
-  .CLKOUT_PHASE_SHIFT("NONE"), // Specify phase shift mode of NONE, FIXED, 
-                               // VARIABLE_POSITIVE, VARIABLE_CENTER or DIRECT
-  .CLK_FEEDBACK("1X"),  // Specify clock feedback of NONE, 1X or 2X
-  .DCM_PERFORMANCE_MODE("MAX_SPEED"), // Can be MAX_SPEED or MAX_RANGE
-  .DESKEW_ADJUST("SYSTEM_SYNCHRONOUS"), // SOURCE_SYNCHRONOUS, SYSTEM_SYNCHRONOUS or
-                                        //   an integer from 0 to 15
-  .DFS_FREQUENCY_MODE("LOW"), // HIGH or LOW frequency mode for frequency synthesis
-  .DLL_FREQUENCY_MODE("LOW"), // LOW, HIGH, or HIGH_SER frequency mode for DLL
-  .DUTY_CYCLE_CORRECTION("TRUE"), // Duty cycle correction, "TRUE"/"FALSE" 
-  .FACTORY_JF(16'hf0f0), // FACTORY JF value suggested to be set to 16'hf0f0
-  .PHASE_SHIFT(0), // Amount of fixed phase shift from -255 to 1023
-  .SIM_DEVICE("VIRTEX5"), // Set target device, "VIRTEX4" or "VIRTEX5" 
-  .STARTUP_WAIT("FALSE")  // Delay configuration DONE until DCM LOCK, "TRUE"/"FALSE" 
-) DCM_ADV_0 (
+wire BUS_CLK;
+wire CLK160;
+wire CLK320;
+wire CLK40;
+wire CLK16;
+wire LOCKED_OUT;
 
-  .CLKIN(CLKIN_IBUFG),     // Clock input (from IBUFG, BUFG or DCM)
+clock_manager iclock_manager (
+    .CLKIN1_IN(CLK_50M), 
+    .RST_IN(RST_DLL), 
+    .CLKOUT0_OUT(CLK160), 
+    .CLKOUT1_OUT(CLK320), 
+    .CLKOUT2_OUT(CLK40), 
+    .CLKOUT3_OUT(CLK16), 
+    .LOCKED_OUT(LOCKED_OUT)
+    );              
 
-  .CLK0(CLK0_OUT),         // 0 degree DCM CLK output
-  .CLK180(),     // 180 degree DCM CLK output
-  .CLK270(),     // 270 degree DCM CLK output
-  .CLK2X(),       // 2X DCM CLK output
-  .CLK2X180(), // 2X, 180 degree DCM CLK out
-  .CLK90(),       // 90 degree DCM CLK output
-  .CLKDV(),       // Divided DCM CLK out (CLKDV_DIVIDE)
-  .CLKFX(CLKFX_BUF),       // DCM CLK synthesis out (M/D)
-  .CLKFX180(), // 180 degree CLK synthesis out
-  .DO(),             // 16-bit data output for Dynamic Reconfiguration Port (DRP)
-  .DRDY(),         // Ready output signal from the DRP
-  .LOCKED(LOCKED1),     // DCM LOCK status output
-  .PSDONE(),     // Dynamic phase adjust done output
-  .CLKFB(CLKFB_IN),       // DCM clock feedback
-  
-  .DADDR(7'b0),       // 7-bit address for the DRP
-  .DCLK(1'b0),         // Clock for the DRP
-  .DEN(1'b0),           // Enable input for the DRP
-  .DI(16'b0),             // 16-bit data input for the DRP
-  .DWE(1'b0),           // Active high allows for writing configuration memory
-  .PSCLK(1'b0),       // Dynamic phase adjust clock input
-  .PSEN(1'b0),         // Dynamic phase adjust enable input
-  .PSINCDEC(1'b0), // Dynamic phase adjust increment/decrement
-  .RST(RST_DLL)            // DCM asynchronous reset input
-);
-
-wire CLKFX_OUT_160;
-BUFG  CLKFX_BUFG_INST (.I(CLKFX_BUF), .O(CLKFX_OUT_160));
-assign CLKFB_IN = CLK0_OUT;
-                         
-wire CLK0_OUT2, CLK2X_OUT2, CLKDV_OUT2, CLKFX_OUT2, LOCKED2, CLKFB_IN2;
-
-DCM_ADV #(
-  .CLKDV_DIVIDE(10), // Divide by: 1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5
-                      //   7.0,7.5,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0 or 16.0
-                      
-  .CLKFX_DIVIDE(8),   // Can be any integer from 1 to 32
-  .CLKFX_MULTIPLY(2), // Can be any integer from 2 to 32
-  
-  .CLKIN_DIVIDE_BY_2("FALSE"), // TRUE/FALSE to enable CLKIN divide by two feature
-  .CLKIN_PERIOD(6.25), // Specify period of input clock in ns from 1.25 to 1000.00
-  .CLKOUT_PHASE_SHIFT("NONE"), // Specify phase shift mode of NONE, FIXED, 
-                               // VARIABLE_POSITIVE, VARIABLE_CENTER or DIRECT
-  .CLK_FEEDBACK("1X"),  // Specify clock feedback of NONE, 1X or 2X
-  .DCM_PERFORMANCE_MODE("MAX_RANGE"), // Can be MAX_SPEED or MAX_RANGE
-  .DESKEW_ADJUST("SYSTEM_SYNCHRONOUS"), // SOURCE_SYNCHRONOUS, SYSTEM_SYNCHRONOUS or
-                                        //   an integer from 0 to 15
-  .DFS_FREQUENCY_MODE("HIGH"), // HIGH or LOW frequency mode for frequency synthesis
-  .DLL_FREQUENCY_MODE("HIGH"), // LOW, HIGH, or HIGH_SER frequency mode for DLL
-  .DUTY_CYCLE_CORRECTION("TRUE"), // Duty cycle correction, "TRUE"/"FALSE" 
-  .FACTORY_JF(16'hf0f0), // FACTORY JF value suggested to be set to 16'hf0f0
-  .PHASE_SHIFT(0), // Amount of fixed phase shift from -255 to 1023
-  .SIM_DEVICE("VIRTEX5"), // Set target device, "VIRTEX4" or "VIRTEX5" 
-  .STARTUP_WAIT("FALSE")  // Delay configuration DONE until DCM LOCK, "TRUE"/"FALSE" 
-) DCM_ADV_1 (
-
-  .CLKIN(CLKFX_OUT_160),     // Clock input (from IBUFG, BUFG or DCM)
-
-  .CLK0(CLK0_OUT2),         // 0 degree DCM CLK output
-  .CLK180(),     // 180 degree DCM CLK output
-  .CLK270(),     // 270 degree DCM CLK output
-  .CLK2X(CLK2X_OUT2),       // 2X DCM CLK output
-  .CLK2X180(), // 2X, 180 degree DCM CLK out
-  .CLK90(),       // 90 degree DCM CLK output
-  .CLKDV(CLKDV_OUT2),       // Divided DCM CLK out (CLKDV_DIVIDE)
-  .CLKFX(CLKFX_OUT2),       // DCM CLK synthesis out (M/D)
-  .CLKFX180(), // 180 degree CLK synthesis out
-  .DO(),             // 16-bit data output for Dynamic Reconfiguration Port (DRP)
-  .DRDY(),         // Ready output signal from the DRP
-  .LOCKED(LOCKED2),     // DCM LOCK status output
-  .PSDONE(),     // Dynamic phase adjust done output
-  .CLKFB(CLKFB_IN2),       // DCM clock feedback
-  
-  .DADDR(7'b0),       // 7-bit address for the DRP
-  .DCLK(1'b0),         // Clock for the DRP
-  .DEN(1'b0),           // Enable input for the DRP
-  .DI(16'b0),             // 16-bit data input for the DRP
-  .DWE(1'b0),           // Active high allows for writing configuration memory
-  .PSCLK(1'b0),       // Dynamic phase adjust clock input
-  .PSEN(1'b0),         // Dynamic phase adjust enable input
-  .PSINCDEC(1'b0), // Dynamic phase adjust increment/decrement
-  .RST(!LOCKED1)            // DCM asynchronous reset input
-);
-
-
-assign CLKFB_IN2 = CLK0_OUT2;                  
-
+/*
 (* KEEP = "{TRUE}" *) wire BUS_CLK;
 (* KEEP = "{TRUE}" *) wire CLK160;
 (* KEEP = "{TRUE}" *) wire CLK320;
 (* KEEP = "{TRUE}" *) wire CLK40;
 (* KEEP = "{TRUE}" *) wire CLK16;
+*/
+
 
 IBUFG   CLK_REG_BUFG_INST (.I(REG_CLK), .O(BUS_CLK));
+
+/*
 //BUFG  CLK_BUFG_INST_160 (.I(CLK0_OUT2), .O(CLK160));
-assign CLK160 = CLK0_OUT2;
+BUFG  CLK_BUFG_INST_160 (.I(CLKFX_OUT_160), .O(CLK160));
+//assign CLK160 = CLK0_OUT2;
 BUFG  CLK_BUFG_INST_320 (.I(CLK2X_OUT2), .O(CLK320));
 BUFG  CLK_BUFG_INST_40 (.I(CLKFX_OUT2), .O(CLK40));
 BUFG  CLK_BUFG_INST_16 (.I(CLKDV_OUT2), .O(CLK16));
+*/
 
 wire BUS_RST;
-assign BUS_RST = !LOCKED2 | !LOCKED1 | RST_DLL;
+assign BUS_RST = !LOCKED_OUT | RST_DLL;
 assign USR_CLK = BUS_CLK; //This can be worked out to change 
 
 
@@ -606,7 +522,7 @@ assign ARB_READY_OUT = !FIFO_FULL;
 assign USR_TX_WE = !USR_TX_AFULL && !FIFO_EMPTY;
 
 assign NIM_OUT = 0; //what is this
-assign USR_CLOSE_ACK = 1'b1;
+assign USR_CLOSE_ACK = USR_CLOSE_REQ;
 assign USR_RX_RE = 1'b1;
 
 assign LED[0] = RX_READY[0];

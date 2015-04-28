@@ -4,3 +4,69 @@ map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_
 par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
 trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
 bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.xst" -ofn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.syr" 
+xst -intstyle ise -ifn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.xst" -ofn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/src/top.ucf -p xc5vlx50-ff676-1 top_cs.ngc top.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+xst -intstyle ise -ifn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.xst" -ofn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/src/top.ucf -p xc5vlx50-ff676-1 top_cs.ngc top.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+xst -intstyle ise -ifn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.xst" -ofn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/src/top.ucf -p xc5vlx50-ff676-1 top_cs.ngc top.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/src/top.ucf -p xc5vlx50-ff676-1 top_cs.ngc top.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.xst" -ofn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/src/top.ucf -p xc5vlx50-ff676-1 top_cs.ngc top.ngd  
+xst -intstyle ise -ifn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.xst" -ofn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/src/top.ucf -p xc5vlx50-ff676-1 top_cs.ngc top.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/src/top.ucf -p xc5vlx50-ff676-1 top_cs.ngc top.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/src/top.ucf -p xc5vlx50-ff676-1 top_cs.ngc top.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/src/top.ucf -p xc5vlx50-ff676-1 top_cs.ngc top.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/src/top.ucf -p xc5vlx50-ff676-1 top_cs.ngc top.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/src/top.ucf -p xc5vlx50-ff676-1 top_cs.ngc top.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/src/top.ucf -p xc5vlx50-ff676-1 top_cs.ngc top.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.xst" -ofn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/src/top.ucf -p xc5vlx50-ff676-1 top_cs.ngc top.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.xst" -ofn "C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/ise/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Shane/Desktop/UW/FPGA_Research/SEABAS_project/pyBAR_work/basil_on_SEABAS/src/top.ucf -p xc5vlx50-ff676-1 top_cs.ngc top.ngd  
+map -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
