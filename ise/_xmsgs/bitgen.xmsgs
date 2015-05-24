@@ -11,109 +11,109 @@
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">icon_control0&lt;13&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp273.PULL</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp273.PULL</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp273.PULL.1</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp273.PULL.1</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp273.PULL.2</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp273.PULL.2</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.1</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.1</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.2</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.2</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.3</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.3</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL.1</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp276.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL.2</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp277.PULL.3</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.4</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.4</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.5</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.5</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.4</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.4</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.4</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.4</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.6</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.6</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.5</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.5</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.5</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.5</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.7</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp274.PULL.7</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.6</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.6</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.6</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.6</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.7</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp275.PULL.7</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="732" delta="new" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.7</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
+<msg type="warning" file="PhysDesignRules" num="732" delta="old" >Unexpected differential configuration for comp <arg fmt="%s" index="1">ProtoComp275.PULL.7</arg>. Adding a pullup, pulldown, or keeper to a differential IO can create signal integrity problems and can violate specifications.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="2236" delta="old" >The DIVCLK_DIVIDE value <arg fmt="%s" index="1">5</arg> of <arg fmt="%s" index="2">PLL_ADV</arg> instance <arg fmt="%s" index="3">iclock_manager/PLL_ADV_INST</arg> is <arg fmt="%s" index="4">above</arg> the Fin / Fpfd value <arg fmt="%f" index="5">2.631579</arg>, where Fin is the input frequency, <arg fmt="%f" index="6">50.000000</arg> MHz, and Fpfd min - max values of <arg fmt="%f" index="7">19.000000</arg> - <arg fmt="%f" index="8">450.000000</arg> MHz.
